@@ -39,7 +39,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="EC_tblGiangday.cs" />
+    <Compile Include="EC_tblGiaovien.cs" />
+    <Compile Include="EC_tblHocsinh.cs" />
+    <Compile Include="EC_tblLop.cs" />
+    <Compile Include="EC_tblMonhoc.cs" />
+    <Compile Include="EC_tblPhanquyen.cs" />
+    <Compile Include="EC_tblUser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
