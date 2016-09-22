@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using QL_GV_HS_THPT_FORM;
 
 namespace QL_GV_HS_THPT
 {
@@ -16,7 +17,7 @@ namespace QL_GV_HS_THPT
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new frmDangnhap());
         }
     }
 }

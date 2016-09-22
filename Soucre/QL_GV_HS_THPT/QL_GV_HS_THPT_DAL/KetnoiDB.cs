@@ -16,8 +16,8 @@ namespace QL_GV_HS_THPT_DAL
         {
             if(KetnoiDB.connect == null)
             {
-                KetnoiDB.connect = new SqlConnection(@"Data Source=;Initial Catalog=;Integrated Security=SSPI;");
-            }
+                KetnoiDB.connect = new SqlConnection(@"Data Source=CONG-PC\PVC_IT;Initial Catalog=QL_GV_HS_THPT;Integrated Security=SSPI;");
+            }                                           
             if(KetnoiDB.connect.State != ConnectionState.Open )
             {
                 KetnoiDB.connect.Open();
