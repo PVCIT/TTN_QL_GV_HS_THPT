@@ -35,8 +35,9 @@ namespace QL_GV_HS_THPT_FORM
             }
             if(bus_User.checkLogin(txtUsername.Text, txtPassword.Text) != null)
             {
-                MessageBox.Show("Đăng nhập thành công !");
-                Application.Run(new frmMain());
+                frmMain frm = new frmMain();
+                frm.Show();
+                this.Hide();
             }
             else
             {
@@ -48,6 +49,18 @@ namespace QL_GV_HS_THPT_FORM
         private void btnThoat_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void ckcHienpw_CheckedChanged(object sender, EventArgs e)
+        {
+            if(ckcHienpw.Checked == true)
+            {
+                txtPassword.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                txtPassword.UseSystemPasswordChar = true;
+            }
         }
     }
 }

@@ -10,7 +10,7 @@ namespace QL_GV_HS_THPT_DAL
 {
     public class SQL_tblUser
     {
-        KetnoiDB cn = new KetnoiDB();
+        KetNoiDB cn = new KetNoiDB();
         //Them du lieu
         public void addUser(EC_tblUser et)
         {
@@ -27,7 +27,7 @@ namespace QL_GV_HS_THPT_DAL
             cn.ThucThiCauLenhSQL(@"DELETE FROM tblUser WHERE Username ='" + et.Username + "' and Password ='" + et.Password + "'");
         }
         //select
-        public DataTable getUserall()
+        public DataTable getAlluser()
         {
             return cn.getDatatable(@"SELECT * FROM tblUser ");
         }

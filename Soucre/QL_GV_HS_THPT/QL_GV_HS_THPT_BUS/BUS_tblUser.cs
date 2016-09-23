@@ -27,9 +27,9 @@ namespace QL_GV_HS_THPT_BUS
             bus.delUser(et);
         }
         //select
-        public DataTable getUserall()
+        public DataTable getAlluser()
         {
-            return bus.getUserall();
+            return bus.getAlluser();
         }
         public DataTable getUser(string dk)
         {

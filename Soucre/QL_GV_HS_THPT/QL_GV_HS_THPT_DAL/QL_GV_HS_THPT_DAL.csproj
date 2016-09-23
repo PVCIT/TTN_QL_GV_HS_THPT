@@ -40,8 +40,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="SQL_tblGiangday.cs" />
+    <Compile Include="SQL_tblGiaovien.cs" />
+    <Compile Include="SQL_tblHocsinh.cs" />
+    <Compile Include="SQL_tblLop.cs" />
+    <Compile Include="SQL_tblMonhoc.cs" />
+    <Compile Include="SQL_tblPhanquyen.cs" />
     <Compile Include="SQL_tblUser.cs" />
-    <Compile Include="KetnoiDB.cs" />
+    <Compile Include="KetNoiDB.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

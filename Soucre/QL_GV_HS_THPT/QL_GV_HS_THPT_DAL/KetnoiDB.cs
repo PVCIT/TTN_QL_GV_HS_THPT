@@ -5,32 +5,34 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
+using System.Configuration;
 
 namespace QL_GV_HS_THPT_DAL
 {
-    public class KetnoiDB
+    public class KetNoiDB
     {
         public static SqlConnection connect;
+        public static string connectionString = ConfigurationManager.ConnectionStrings["Connect"].ConnectionString;
         //Mo ket noi
         public static void MoKetNoi()
         {
-            if(KetnoiDB.connect == null)
+            if(KetNoiDB.connect == null)
             {
-                KetnoiDB.connect = new SqlConnection(@"Data Source=CONG-PC\PVC_IT;Initial Catalog=QL_GV_HS_THPT;Integrated Security=SSPI;");
+                KetNoiDB.connect = new SqlConnection(connectionString);
             }                                           
-            if(KetnoiDB.connect.State != ConnectionState.Open )
+            if(KetNoiDB.connect.State != ConnectionState.Open )
             {
-                KetnoiDB.connect.Open();
+                KetNoiDB.connect.Open();
             }
         }
         //Dong ket noi
         public void DongKetNoi()
         {
-            if(KetnoiDB.connect.State != null)
+            if(KetNoiDB.connect.State != null)
             {
-                if (KetnoiDB.connect.State == ConnectionState.Open)
+                if (KetNoiDB.connect.State == ConnectionState.Open)
                 {
-                    KetnoiDB.connect.Close();
+                    KetNoiDB.connect.Close();
                 }
             }
         }

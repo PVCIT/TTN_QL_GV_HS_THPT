@@ -59,5 +59,15 @@ namespace QL_GV_HS_THPT_FORM.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1474570833_Login_in {
+            get {
+                object obj = ResourceManager.GetObject("1474570833_Login_in", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
