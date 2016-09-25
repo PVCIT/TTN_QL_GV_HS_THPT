@@ -16,5 +16,10 @@ namespace QL_GV_HS_THPT_FORM
         {
             InitializeComponent();
         }
+
+        private void frmMain_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

@@ -84,19 +84,31 @@
             // 
             // btnDangnhap
             // 
+            this.btnDangnhap.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnDangnhap.FlatAppearance.BorderSize = 0;
+            this.btnDangnhap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDangnhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnDangnhap.Image = ((System.Drawing.Image)(resources.GetObject("btnDangnhap.Image")));
             this.btnDangnhap.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnDangnhap.Location = new System.Drawing.Point(153, 214);
+            this.btnDangnhap.Location = new System.Drawing.Point(135, 214);
             this.btnDangnhap.Name = "btnDangnhap";
-            this.btnDangnhap.Size = new System.Drawing.Size(69, 70);
+            this.btnDangnhap.Size = new System.Drawing.Size(102, 70);
             this.btnDangnhap.TabIndex = 4;
             this.btnDangnhap.Text = "Đăng nhập";
             this.btnDangnhap.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnDangnhap.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnDangnhap.UseVisualStyleBackColor = true;
             this.btnDangnhap.Click += new System.EventHandler(this.btnDangnhap_Click);
             // 
             // btnThoat
             // 
+            this.btnThoat.AccessibleDescription = "keke";
+            this.btnThoat.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnThoat.FlatAppearance.BorderSize = 0;
+            this.btnThoat.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btnThoat.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.btnThoat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnThoat.Image = ((System.Drawing.Image)(resources.GetObject("btnThoat.Image")));
             this.btnThoat.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnThoat.Location = new System.Drawing.Point(288, 214);
@@ -105,6 +117,7 @@
             this.btnThoat.TabIndex = 5;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnThoat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnThoat.UseVisualStyleBackColor = true;
             this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
