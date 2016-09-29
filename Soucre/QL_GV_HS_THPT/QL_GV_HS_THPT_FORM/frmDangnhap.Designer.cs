@@ -92,7 +92,7 @@
             this.btnDangnhap.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnDangnhap.Location = new System.Drawing.Point(135, 214);
             this.btnDangnhap.Name = "btnDangnhap";
-            this.btnDangnhap.Size = new System.Drawing.Size(102, 70);
+            this.btnDangnhap.Size = new System.Drawing.Size(91, 70);
             this.btnDangnhap.TabIndex = 4;
             this.btnDangnhap.Text = "Đăng nhập";
             this.btnDangnhap.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
