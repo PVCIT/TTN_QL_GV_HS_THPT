@@ -12,7 +12,7 @@ namespace QL_GV_HS_THPT_DAL
     public class KetNoiDB
     {
         public static SqlConnection connect;
-        public static string connectionString = ConfigurationManager.ConnectionStrings["Connect"].ConnectionString;
+        public static string connectionString = @"Data Source=.\SQLEXPRESS;Initial Catalog=QL_GV_HS_THPT;Integrated Security=SSPI;";
         //Mo ket noi
         public static void MoKetNoi()
         {

@@ -70,5 +70,19 @@ namespace QL_QV_HS_THPT_Entity
             get { return _MaLop; }
             set { _MaLop = value; }
         }
+
+        private string _DanToc;
+        public string DanToc
+        {
+            get { return _DanToc;}
+            set { _DanToc = value; }
+        }
+
+        private string _TonGiao;
+        public string TonGiao
+        {
+            get { return _TonGiao; }
+            set { _TonGiao = value; }
+        }
     }
 }

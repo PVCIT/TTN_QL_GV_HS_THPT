@@ -13,3 +13,19 @@ E:\GitHub\TTN_QL_GV_HS_THPT\Soucre\QL_GV_HS_THPT\QL_GV_HS_THPT_FORM\obj\Debug\QL
 E:\GitHub\TTN_QL_GV_HS_THPT\Soucre\QL_GV_HS_THPT\QL_GV_HS_THPT_FORM\obj\Debug\QL_GV_HS_THPT_FORM.Properties.Resources.resources
 E:\GitHub\TTN_QL_GV_HS_THPT\Soucre\QL_GV_HS_THPT\QL_GV_HS_THPT_FORM\obj\Debug\QL_GV_HS_THPT_FORM.csproj.GenerateResource.Cache
 E:\GitHub\TTN_QL_GV_HS_THPT\Soucre\QL_GV_HS_THPT\QL_GV_HS_THPT_FORM\obj\Debug\QL_GV_HS_THPT_FORM.frmMain.resources
+F:\Hoc tap\Thuc tap nhom\TTN_QL_GV_HS_THPT\Soucre\QL_GV_HS_THPT\QL_GV_HS_THPT_FORM\obj\Debug\QL_GV_HS_THPT_FORM.csprojResolveAssemblyReference.cache
+F:\Hoc tap\Thuc tap nhom\TTN_QL_GV_HS_THPT\Soucre\QL_GV_HS_THPT\QL_GV_HS_THPT_FORM\obj\Debug\QL_GV_HS_THPT_FORM.frmDangnhap.resources
+F:\Hoc tap\Thuc tap nhom\TTN_QL_GV_HS_THPT\Soucre\QL_GV_HS_THPT\QL_GV_HS_THPT_FORM\obj\Debug\QL_GV_HS_THPT_FORM.frmHocsinh.resources
+F:\Hoc tap\Thuc tap nhom\TTN_QL_GV_HS_THPT\Soucre\QL_GV_HS_THPT\QL_GV_HS_THPT_FORM\obj\Debug\QL_GV_HS_THPT_FORM.frmMain.resources
+F:\Hoc tap\Thuc tap nhom\TTN_QL_GV_HS_THPT\Soucre\QL_GV_HS_THPT\QL_GV_HS_THPT_FORM\obj\Debug\QL_GV_HS_THPT_FORM.Properties.Resources.resources
+F:\Hoc tap\Thuc tap nhom\TTN_QL_GV_HS_THPT\Soucre\QL_GV_HS_THPT\QL_GV_HS_THPT_FORM\obj\Debug\QL_GV_HS_THPT_FORM.csproj.GenerateResource.Cache
+F:\Hoc tap\Thuc tap nhom\TTN_QL_GV_HS_THPT\Soucre\QL_GV_HS_THPT\QL_GV_HS_THPT_FORM\obj\Debug\QL_GV_HS_THPT_FORM.dll
+F:\Hoc tap\Thuc tap nhom\TTN_QL_GV_HS_THPT\Soucre\QL_GV_HS_THPT\QL_GV_HS_THPT_FORM\bin\Debug\QL_GV_HS_THPT_FORM.dll
+F:\Hoc tap\Thuc tap nhom\TTN_QL_GV_HS_THPT\Soucre\QL_GV_HS_THPT\QL_GV_HS_THPT_FORM\bin\Debug\QL_GV_HS_THPT_FORM.pdb
+F:\Hoc tap\Thuc tap nhom\TTN_QL_GV_HS_THPT\Soucre\QL_GV_HS_THPT\QL_GV_HS_THPT_FORM\bin\Debug\QL_GV_HS_THPT_BUS.dll
+F:\Hoc tap\Thuc tap nhom\TTN_QL_GV_HS_THPT\Soucre\QL_GV_HS_THPT\QL_GV_HS_THPT_FORM\bin\Debug\QL_GV_HS_THPT_DAL.dll
+F:\Hoc tap\Thuc tap nhom\TTN_QL_GV_HS_THPT\Soucre\QL_GV_HS_THPT\QL_GV_HS_THPT_FORM\bin\Debug\QL_QV_HS_THPT_Entity.dll
+F:\Hoc tap\Thuc tap nhom\TTN_QL_GV_HS_THPT\Soucre\QL_GV_HS_THPT\QL_GV_HS_THPT_FORM\bin\Debug\QL_GV_HS_THPT_BUS.pdb
+F:\Hoc tap\Thuc tap nhom\TTN_QL_GV_HS_THPT\Soucre\QL_GV_HS_THPT\QL_GV_HS_THPT_FORM\bin\Debug\QL_GV_HS_THPT_DAL.pdb
+F:\Hoc tap\Thuc tap nhom\TTN_QL_GV_HS_THPT\Soucre\QL_GV_HS_THPT\QL_GV_HS_THPT_FORM\bin\Debug\QL_QV_HS_THPT_Entity.pdb
+F:\Hoc tap\Thuc tap nhom\TTN_QL_GV_HS_THPT\Soucre\QL_GV_HS_THPT\QL_GV_HS_THPT_FORM\obj\Debug\QL_GV_HS_THPT_FORM.pdb

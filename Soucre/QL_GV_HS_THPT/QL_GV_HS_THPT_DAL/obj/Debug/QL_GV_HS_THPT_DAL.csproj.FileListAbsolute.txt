@@ -5,3 +5,10 @@ E:\GitHub\TTN_QL_GV_HS_THPT\Soucre\QL_GV_HS_THPT\QL_GV_HS_THPT_DAL\bin\Debug\QL_
 E:\GitHub\TTN_QL_GV_HS_THPT\Soucre\QL_GV_HS_THPT\QL_GV_HS_THPT_DAL\obj\Debug\QL_GV_HS_THPT_DAL.csprojResolveAssemblyReference.cache
 E:\GitHub\TTN_QL_GV_HS_THPT\Soucre\QL_GV_HS_THPT\QL_GV_HS_THPT_DAL\obj\Debug\QL_GV_HS_THPT_DAL.dll
 E:\GitHub\TTN_QL_GV_HS_THPT\Soucre\QL_GV_HS_THPT\QL_GV_HS_THPT_DAL\obj\Debug\QL_GV_HS_THPT_DAL.pdb
+F:\Hoc tap\Thuc tap nhom\TTN_QL_GV_HS_THPT\Soucre\QL_GV_HS_THPT\QL_GV_HS_THPT_DAL\bin\Debug\QL_GV_HS_THPT_DAL.dll
+F:\Hoc tap\Thuc tap nhom\TTN_QL_GV_HS_THPT\Soucre\QL_GV_HS_THPT\QL_GV_HS_THPT_DAL\bin\Debug\QL_GV_HS_THPT_DAL.pdb
+F:\Hoc tap\Thuc tap nhom\TTN_QL_GV_HS_THPT\Soucre\QL_GV_HS_THPT\QL_GV_HS_THPT_DAL\bin\Debug\QL_QV_HS_THPT_Entity.dll
+F:\Hoc tap\Thuc tap nhom\TTN_QL_GV_HS_THPT\Soucre\QL_GV_HS_THPT\QL_GV_HS_THPT_DAL\bin\Debug\QL_QV_HS_THPT_Entity.pdb
+F:\Hoc tap\Thuc tap nhom\TTN_QL_GV_HS_THPT\Soucre\QL_GV_HS_THPT\QL_GV_HS_THPT_DAL\obj\Debug\QL_GV_HS_THPT_DAL.csprojResolveAssemblyReference.cache
+F:\Hoc tap\Thuc tap nhom\TTN_QL_GV_HS_THPT\Soucre\QL_GV_HS_THPT\QL_GV_HS_THPT_DAL\obj\Debug\QL_GV_HS_THPT_DAL.dll
+F:\Hoc tap\Thuc tap nhom\TTN_QL_GV_HS_THPT\Soucre\QL_GV_HS_THPT\QL_GV_HS_THPT_DAL\obj\Debug\QL_GV_HS_THPT_DAL.pdb
