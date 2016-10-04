@@ -49,20 +49,22 @@ namespace QL_QV_HS_THPT_Entity
             get { return _DiaChi; }
             set { _DiaChi = value; }
         }
-        
-        private string _PhuHuynh;
-        public string PhuHuynh
+
+        private string _DanToc;
+
+        public string DanToc
         {
-            get { return _PhuHuynh; }
-            set { _PhuHuynh = value; }
+            get { return _DanToc; }
+            set { _DanToc = value; }
         }
-        
-        private string _LopTruong;
-        public string LopTruong
+
+        private string _TonGiao;
+        public string TonGiao
         {
-            get { return _LopTruong; }
-            set { _LopTruong = value; }
+            get { return _TonGiao; }
+            set { _TonGiao = value; }
         }
+      
         
         private string _MaLop;
         public string MaLop
