@@ -31,9 +31,19 @@ namespace QL_GV_HS_THPT_DAL
         {
             return cn.getDatatable(@"SELECT * FROM tblGiaovien ");
         }
-        public DataTable getGiaovien(string dk)
+        public DataTable getAllgiaovien(string dk)
         {
             return cn.getDatatable(@"SELECT * FROM tblGiaovien " + dk);
         }
+        //select chi tiet
+        public DataTable getThongTinGV()
+        {
+            return cn.getDatatable(@"SELECT MaGV, (Ho+' '+Ten) as HoTen, GT, NgaySinh, SDT, DiaChi, Luong, MaMon FROM tblGiaovien");
+        }
+        public DataTable getThongTinGV(string dk)
+        {
+            return cn.getDatatable(@"SELECT MaGV, (Ho+' '+Ten) as HoTen, GT, NgaySinh, SDT, DiaChi, Luong, MaMon FROM tblGiaovien where " + dk);
+        }
+
     }
 }
