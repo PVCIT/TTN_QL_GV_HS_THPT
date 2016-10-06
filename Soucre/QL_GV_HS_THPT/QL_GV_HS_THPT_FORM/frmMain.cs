@@ -21,5 +21,20 @@ namespace QL_GV_HS_THPT_FORM
         {
             Application.Exit();
         }
+
+        private void frmMain_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void nhậpHọcSinhToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmHocsinh frmHS = new frmHocsinh("TimKiem");
+            this.Hide();
+            
+            //frmHS.TopLevel = false;
+           // pnlMain.Controls.Add(frmGV);
+            frmHS.Show();
+        }
     }
 }
