@@ -35,5 +35,9 @@ namespace QL_GV_HS_THPT_DAL
         {
             return cn.getDatatable(@"SELECT * FROM tblGiaovien " + dk);
         }
+        public DataTable getField(string Field)
+        {
+            return cn.getDatatable(String.Format(@"SELECT distinct {0} FROM tblGiaovien", Field));
+        }
     }
 }
