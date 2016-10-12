@@ -36,5 +36,12 @@ namespace QL_GV_HS_THPT_FORM
            // pnlMain.Controls.Add(frmGV);
             frmHS.Show();
         }
+
+        private void thêmGiáoViênToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmTimGV frmGV = new frmTimGV();
+            this.Hide();
+            frmGV.Show();
+        }
     }
 }

@@ -44,6 +44,13 @@ namespace QL_GV_HS_THPT_DAL
         {
             return cn.getDatatable(@"SELECT MaGV, (Ho+' '+Ten) as HoTen, GT, NgaySinh, SDT, DiaChi, Luong, MaMon FROM tblGiaovien where " + dk);
         }
-
+        public DataTable getField(string Field)
+        {
+            return cn.getDatatable(String.Format(@"SELECT distinct {0} FROM tblGiaovien", Field));
+        }
+        public DataTable getGiaovien(string dk)
+        {
+            return cn.getDatatable(@"SELECT * FROM tblGiaovien " + dk);
+        }
     }
 }
