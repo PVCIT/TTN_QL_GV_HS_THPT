@@ -190,6 +190,7 @@
             this.thêmGiáoViênToolStripMenuItem.Name = "thêmGiáoViênToolStripMenuItem";
             this.thêmGiáoViênToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.thêmGiáoViênToolStripMenuItem.Text = "Tìm kiếm giáo viên";
+            this.thêmGiáoViênToolStripMenuItem.Click += new System.EventHandler(this.thêmGiáoViênToolStripMenuItem_Click);
             // 
             // thêmGiáoViênToolStripMenuItem1
             // 
