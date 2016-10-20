@@ -77,6 +77,12 @@
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmQLGD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQLGD.Designer.cs">
+      <DependentUpon>frmQLGD.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmQuantri.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -162,8 +168,17 @@
     <EmbeddedResource Include="frmDangnhap.resx">
       <DependentUpon>frmDangnhap.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmHocsinh.resx">
+      <DependentUpon>frmHocsinh.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQLGD.resx">
+      <DependentUpon>frmQLGD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTimGV.resx">
+      <DependentUpon>frmTimGV.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

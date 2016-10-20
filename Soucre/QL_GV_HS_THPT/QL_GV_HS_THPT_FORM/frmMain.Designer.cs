@@ -90,10 +90,11 @@
             this.btnTkb.Name = "btnTkb";
             this.btnTkb.Size = new System.Drawing.Size(109, 87);
             this.btnTkb.TabIndex = 3;
-            this.btnTkb.Text = "Thời kháo biểu";
+            this.btnTkb.Text = "Quản lý giảng dạy";
             this.btnTkb.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnTkb.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnTkb.UseVisualStyleBackColor = true;
+            this.btnTkb.Click += new System.EventHandler(this.btnTkb_Click);
             // 
             // btnGiaovien
             // 
@@ -226,7 +227,7 @@
             this.tạoTàiKhoảnToolStripMenuItem,
             this.phânQuyềnToolStripMenuItem});
             this.tàiKhoảnToolStripMenuItem.Name = "tàiKhoảnToolStripMenuItem";
-            this.tàiKhoảnToolStripMenuItem.Size = new System.Drawing.Size(70, 20);
+            this.tàiKhoảnToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
             this.tàiKhoảnToolStripMenuItem.Text = "Tài khoản";
             // 
             // đăngXuátToolStripMenuItem
@@ -268,6 +269,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmMain";
             this.Text = "frmMain";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmMain_FormClosed_1);
             this.Load += new System.EventHandler(this.frmMain_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

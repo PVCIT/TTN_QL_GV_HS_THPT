@@ -43,5 +43,18 @@ namespace QL_GV_HS_THPT_FORM
             this.Hide();
             frmGV.Show();
         }
+
+        private void frmMain_FormClosed_1(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnTkb_Click(object sender, EventArgs e)
+        {
+            frmQLGD frmQlgd = new frmQLGD();
+            frmQlgd.Show();
+            this.Dispose();
+            
+        }
     }
 }

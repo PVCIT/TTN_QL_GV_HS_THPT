@@ -39,6 +39,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BUS_tblGiaovien.cs" />
+    <Compile Include="BUS_tblHocSinh.cs" />
     <Compile Include="BUS_tblUser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

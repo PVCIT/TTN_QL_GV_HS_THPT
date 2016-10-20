@@ -198,5 +198,13 @@ namespace QL_GV_HS_THPT_FORM
             dgvDanhSach.DataSource = DAL_Giang.getThongTinGD(dk);
         }
 
+        private void frmQLGD_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            frmMain frm = new frmMain();
+            frm.Show();
+            this.Dispose();
+            
+        }
+
     }
 }
