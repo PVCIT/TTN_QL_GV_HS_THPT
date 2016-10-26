@@ -21,5 +21,19 @@ namespace QL_GV_HS_THPT_FORM
         {
             Application.Exit();
         }
+
+        private void danhSáchGiáoViênToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmGiaovien gv = new frmGiaovien();
+            gv.Show();
+        }
+
+        private void thêmGiáoViênToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmThemGV gv = new frmThemGV();
+            gv.Show();
+        }
     }
 }

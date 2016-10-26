@@ -143,6 +143,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="QL_GV_HS_THPTDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QL_GV_HS_THPTDataSet.xsd</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\QL_GV_HS_THPT_BUS\QL_GV_HS_THPT_BUS.csproj">
@@ -162,8 +172,17 @@
     <EmbeddedResource Include="frmDangnhap.resx">
       <DependentUpon>frmDangnhap.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmGiaovien.resx">
+      <DependentUpon>frmGiaovien.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSuaGV.resx">
+      <DependentUpon>frmSuaGV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThemGV.resx">
+      <DependentUpon>frmThemGV.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -171,7 +190,41 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="QL_GV_HS_THPTDataSet.xsc">
+      <DependentUpon>QL_GV_HS_THPTDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QL_GV_HS_THPTDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QL_GV_HS_THPTDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QL_GV_HS_THPTDataSet.xss">
+      <DependentUpon>QL_GV_HS_THPTDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Resources\1474570833_Login_in.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1476781401_Add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1476781433_Edit_page.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1476781405_Save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1476781406_Delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1476781463_Refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1476781399_Cancel.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

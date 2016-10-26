@@ -14,8 +14,9 @@ namespace QL_GV_HS_THPT_DAL
         //Them du lieu
         public void addGiaovien(EC_tblGiaovien et)
         {
-            cn.ThucThiCauLenhSQL(@"INSERT INTO tblGiaovien	(MaGV, Ho, Ten, GT, SDT, NgaySinh, DiaChi, Luong, MaMon)    VALUES   ( '"+et.MaGV+"' , N'"+et.Ho+"', N'"+et.Ten+"', N'"+et.GT+"', '"+et.SDT+"', '"+et.NgaySinh+"', N'"+et.DiaChi+"', "+et.Luong+", '"+et.MaMon+"')");
+            cn.ThucThiCauLenhSQL(@"INSERT INTO tblGiaovien	(MaGV,Ho,Ten,GT,SDT,NgaySinh,DiaChi,Luong,MaMon) VALUES ( '"+et.MaGV+"' , N'"+et.Ho+"', N'"+et.Ten+"', N'"+et.GT+"', '"+et.SDT+"', '"+et.NgaySinh+"', N'"+et.DiaChi+"', '"+et.Luong+"', '"+et.MaMon+"')");
         }
+        
         //Sua du lieu
         public void updateGiaovien(EC_tblGiaovien et)
         {
@@ -34,6 +35,6 @@ namespace QL_GV_HS_THPT_DAL
         public DataTable getGiaovien(string dk)
         {
             return cn.getDatatable(@"SELECT * FROM tblGiaovien " + dk);
-        }
+        }   
     }
 }
