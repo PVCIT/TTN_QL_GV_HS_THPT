@@ -19,7 +19,7 @@ namespace QL_GV_HS_THPT_DAL
         //Sua du lieu
         public void updateUser(EC_tblUser et)
         {
-            cn.ThucThiCauLenhSQL(@"UPDATE	tblUser	SET   MaGV ='" + et.MaGV + "', Quyen = " + et.Quyen + " WHERE Username ='" + et.Username + "' and Password ='" + et.Password + "',");
+            cn.ThucThiCauLenhSQL(@"UPDATE	tblUser	SET   MaGV ='" + et.MaGV + "', Quyen = " + et.Quyen + ",Password ='" + et.Password + "' WHERE Username ='" + et.Username + "'");
         }
         //Xoa du lieu
         public void delUser(EC_tblUser et)
@@ -40,6 +40,16 @@ namespace QL_GV_HS_THPT_DAL
         {
             return cn.getValue(@"SELECT Quyen FROM tblUser WHERE Username ='" + Username + "' and Password ='" + Password + "'");
         }
+        public DataTable getUserinfo(string dk)
+        {
+            return cn.getDatatable(@"Select u.Username, u.Password, u.MaGV, u.TenQuyen, g.Ho, g.Ten 
+from (select Username,Password,TenQuyen,MaGV from tblUser, tblPhanquyen where tblUser.Quyen = tblPhanquyen.Quyen) u right join tblGiaovien g 
+on u.MaGV = g.MaGV  " + dk);
+        }
 
+        public string checkUser(string Username)
+        {
+            return cn.getValue(@"select * from tblUser where Username = '"+Username+"'");
+        }
     }
 }

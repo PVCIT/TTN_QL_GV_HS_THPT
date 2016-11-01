@@ -6,21 +6,28 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Configuration;
 using System.Windows.Forms;
 using QL_GV_HS_THPT_BUS;
+using QL_QV_HS_THPT_Entity;
 
 namespace QL_GV_HS_THPT_FORM
 {
     public partial class frmDangnhap : Form
     {
+        BUS_tblUser busUser = new BUS_tblUser();
         public frmDangnhap()
         {
             InitializeComponent();
         }
-        BUS_tblUser bus_User = new BUS_tblUser();
         private void frmDangnhap_Load(object sender, EventArgs e)
         {
-
+            if(ConfigurationManager.AppSettings.Get("Save") == "true")
+            {
+                ckcSave.Checked = true;
+                txtUsername.Text = ConfigurationManager.AppSettings.Get("Username");
+                txtPassword.Text = ConfigurationManager.AppSettings.Get("Password");
+            }
         }
 
         private void btnDangnhap_Click(object sender, EventArgs e)
@@ -33,8 +40,30 @@ namespace QL_GV_HS_THPT_FORM
             {
                 MessageBox.Show("Chưa nhập mật khẩu !");
             }
-            if(bus_User.checkLogin(txtUsername.Text, txtPassword.Text) != null)
+            if(busUser.checkLogin(txtUsername.Text, txtPassword.Text) != null)
             {
+                EC_tblUser ecUser = busUser.getUser(txtUsername.Text, txtPassword.Text);
+                
+                if (ckcSave.Checked == true)
+                {
+
+                    Configuration _config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
+                    _config.AppSettings.Settings["Username"].Value = ecUser.Username;
+                    _config.AppSettings.Settings["MaGV"].Value = ecUser.MaGV;
+                    _config.AppSettings.Settings["Quyen"].Value = ecUser.Quyen;
+                    _config.AppSettings.Settings["Save"].Value = "true";
+
+                    _config.Save(ConfigurationSaveMode.Modified);
+                    ConfigurationManager.RefreshSection("appSettings");
+                }
+                else
+                {
+                    Configuration _config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
+                    _config.AppSettings.Settings["Save"].Value = "false";
+               
+                    _config.Save(ConfigurationSaveMode.Modified);
+                    ConfigurationManager.RefreshSection("appSettings");
+                }
                 frmMain frm = new frmMain();
                 frm.Show();
                 this.Hide();
@@ -61,6 +90,21 @@ namespace QL_GV_HS_THPT_FORM
             {
                 txtPassword.UseSystemPasswordChar = true;
             }
+        }
+
+        private void txtUsername_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter) txtPassword.Focus();
+        }
+
+        private void txtPassword_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter) btnDangnhap_Click(sender, null);
+        }
+
+        private void ckcSave_CheckedChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }

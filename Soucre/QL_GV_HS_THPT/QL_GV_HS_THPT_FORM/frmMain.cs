@@ -5,13 +5,16 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Configuration;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using QL_QV_HS_THPT_Entity;
 
 namespace QL_GV_HS_THPT_FORM
 {
     public partial class frmMain : Form
     {
+        EC_tblUser curUser = new EC_tblUser();
         public frmMain()
         {
             InitializeComponent();
@@ -24,7 +27,7 @@ namespace QL_GV_HS_THPT_FORM
 
         private void frmMain_Load(object sender, EventArgs e)
         {
-
+            lblHi.Text += ConfigurationManager.AppSettings.Get("Username");
         }
 
         private void nhậpHọcSinhToolStripMenuItem_Click(object sender, EventArgs e)
@@ -56,5 +59,43 @@ namespace QL_GV_HS_THPT_FORM
             this.Dispose();
             
         }
+
+        private void đăngKýGiảngDạyToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmQLGD frm = new frmQLGD();
+            frm.Show();
+            this.Hide();
+        }
+
+        private void btnHocsinh_Click(object sender, EventArgs e)
+        {
+            frmHocsinh frm = new frmHocsinh();
+            frm.Show();
+            this.Dispose();
+        }
+
+        private void btnAcc_Click(object sender, EventArgs e)
+        {
+            frmQuantri frm = new frmQuantri();
+            frm.Show();
+            this.Dispose();
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            frmDangnhap frm = new frmDangnhap();
+            frm.Show();
+            this.Dispose();
+        }
+        
+        private void checkRule(int rule)
+        {
+            if(rule==0)
+            {
+                
+            }
+        }
+
+
     }
 }

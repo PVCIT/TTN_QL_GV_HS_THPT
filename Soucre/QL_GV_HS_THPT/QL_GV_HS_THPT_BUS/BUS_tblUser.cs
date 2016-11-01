@@ -41,5 +41,29 @@ namespace QL_GV_HS_THPT_BUS
             return bus.checkLogin(Username, Password);
         }
 
+        public DataTable getUserinfo(string dk)
+        {
+            return bus.getUserinfo(dk);
+        }
+
+        public string checkUser(string Username)
+        {
+            return bus.checkUser(Username);
+        }
+
+        public EC_tblUser getUser(string Username,string Password)
+        {
+            EC_tblUser ecUser = new EC_tblUser();
+            DataTable tb = bus.getUser(@" where Username='" + Username + "' and Password = '" + Password + "'");
+            if(tb.Rows.Count >=0 )
+            {
+                ecUser.Username = tb.Rows[0]["Username"].ToString();
+                ecUser.Password = tb.Rows[0]["Password"].ToString();
+                ecUser.MaGV = tb.Rows[0]["MaGV"].ToString();
+                ecUser.Quyen = tb.Rows[0]["Quyen"].ToString();
+            }
+            return ecUser;
+        }
     }
+
 }

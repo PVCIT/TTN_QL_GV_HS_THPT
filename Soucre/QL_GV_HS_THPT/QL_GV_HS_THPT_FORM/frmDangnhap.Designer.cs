@@ -37,6 +37,7 @@
             this.btnThoat = new System.Windows.Forms.Button();
             this.ckcHienpw = new System.Windows.Forms.CheckBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.ckcSave = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -70,7 +71,7 @@
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(200, 23);
             this.txtUsername.TabIndex = 2;
-            this.txtUsername.Text = "admin";
+            this.txtUsername.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtUsername_KeyDown);
             // 
             // txtPassword
             // 
@@ -79,8 +80,8 @@
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(200, 23);
             this.txtPassword.TabIndex = 3;
-            this.txtPassword.Text = "admin";
             this.txtPassword.UseSystemPasswordChar = true;
+            this.txtPassword.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtPassword_KeyDown);
             // 
             // btnDangnhap
             // 
@@ -102,7 +103,7 @@
             // 
             // btnThoat
             // 
-            this.btnThoat.AccessibleDescription = "keke";
+            this.btnThoat.AccessibleDescription = "";
             this.btnThoat.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnThoat.FlatAppearance.BorderSize = 0;
             this.btnThoat.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
@@ -124,7 +125,7 @@
             // ckcHienpw
             // 
             this.ckcHienpw.AutoSize = true;
-            this.ckcHienpw.Location = new System.Drawing.Point(142, 191);
+            this.ckcHienpw.Location = new System.Drawing.Point(268, 191);
             this.ckcHienpw.Name = "ckcHienpw";
             this.ckcHienpw.Size = new System.Drawing.Size(95, 17);
             this.ckcHienpw.TabIndex = 6;
@@ -141,6 +142,17 @@
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
             // 
+            // ckcSave
+            // 
+            this.ckcSave.AutoSize = true;
+            this.ckcSave.Location = new System.Drawing.Point(135, 191);
+            this.ckcSave.Name = "ckcSave";
+            this.ckcSave.Size = new System.Drawing.Size(63, 17);
+            this.ckcSave.TabIndex = 8;
+            this.ckcSave.Text = "Ghi nhớ";
+            this.ckcSave.UseVisualStyleBackColor = true;
+            this.ckcSave.CheckedChanged += new System.EventHandler(this.ckcSave_CheckedChanged);
+            // 
             // frmDangnhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -149,6 +161,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(506, 314);
+            this.Controls.Add(this.ckcSave);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.ckcHienpw);
             this.Controls.Add(this.btnThoat);
@@ -176,5 +189,6 @@
         private System.Windows.Forms.Button btnThoat;
         private System.Windows.Forms.CheckBox ckcHienpw;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.CheckBox ckcSave;
     }
 }

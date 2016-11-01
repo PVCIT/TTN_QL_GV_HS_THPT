@@ -16,3 +16,5 @@ E:\GitHub\TTN_QL_GV_HS_THPT\Soucre\QL_GV_HS_THPT\QL_GV_HS_THPT_FORM\obj\Debug\QL
 E:\GitHub\TTN_QL_GV_HS_THPT\Soucre\QL_GV_HS_THPT\QL_GV_HS_THPT_FORM\obj\Debug\QL_GV_HS_THPT_FORM.frmHocsinh.resources
 E:\GitHub\TTN_QL_GV_HS_THPT\Soucre\QL_GV_HS_THPT\QL_GV_HS_THPT_FORM\obj\Debug\QL_GV_HS_THPT_FORM.frmQLGD.resources
 E:\GitHub\TTN_QL_GV_HS_THPT\Soucre\QL_GV_HS_THPT\QL_GV_HS_THPT_FORM\obj\Debug\QL_GV_HS_THPT_FORM.frmTimGV.resources
+E:\GitHub\TTN_QL_GV_HS_THPT\Soucre\QL_GV_HS_THPT\QL_GV_HS_THPT_FORM\obj\Debug\QL_GV_HS_THPT_FORM.frmQuantri.resources
+E:\GitHub\TTN_QL_GV_HS_THPT\Soucre\QL_GV_HS_THPT\QL_GV_HS_THPT_FORM\obj\Debug\QL_GV_HS_THPT_FORM.frmThemtaikhoan.resources

@@ -41,14 +41,6 @@
             this.btnThoat = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.dgvGiaoVien = new System.Windows.Forms.DataGridView();
-            this.toolStrip2 = new System.Windows.Forms.ToolStrip();
-            this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
-            this.txtTimMaGV = new System.Windows.Forms.ToolStripTextBox();
-            this.txtTimHoGV = new System.Windows.Forms.ToolStripTextBox();
-            this.txtTimTenGV = new System.Windows.Forms.ToolStripTextBox();
-            this.cboTimMaMon = new System.Windows.Forms.ToolStripComboBox();
-            this.cboTimDiaChi = new System.Windows.Forms.ToolStripComboBox();
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.colMaGV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colHo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -58,6 +50,14 @@
             this.colNgaySinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colSDT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.toolStrip2 = new System.Windows.Forms.ToolStrip();
+            this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
+            this.txtTimMaGV = new System.Windows.Forms.ToolStripTextBox();
+            this.txtTimHoGV = new System.Windows.Forms.ToolStripTextBox();
+            this.txtTimTenGV = new System.Windows.Forms.ToolStripTextBox();
+            this.cboTimMaMon = new System.Windows.Forms.ToolStripComboBox();
+            this.cboTimDiaChi = new System.Windows.Forms.ToolStripComboBox();
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvGiaoVien)).BeginInit();
@@ -85,6 +85,7 @@
             this.btnThoat.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnThoat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // panel2
             // 
@@ -122,6 +123,81 @@
             this.dgvGiaoVien.Name = "dgvGiaoVien";
             this.dgvGiaoVien.Size = new System.Drawing.Size(1083, 161);
             this.dgvGiaoVien.TabIndex = 4;
+            // 
+            // colMaGV
+            // 
+            this.colMaGV.DataPropertyName = "MaGV";
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.colMaGV.DefaultCellStyle = dataGridViewCellStyle2;
+            this.colMaGV.HeaderText = "Mã GV";
+            this.colMaGV.MinimumWidth = 50;
+            this.colMaGV.Name = "colMaGV";
+            // 
+            // colHo
+            // 
+            this.colHo.DataPropertyName = "Ho";
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.colHo.DefaultCellStyle = dataGridViewCellStyle3;
+            this.colHo.HeaderText = "Họ";
+            this.colHo.Name = "colHo";
+            this.colHo.Width = 180;
+            // 
+            // colTen
+            // 
+            this.colTen.DataPropertyName = "Ten";
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.colTen.DefaultCellStyle = dataGridViewCellStyle4;
+            this.colTen.HeaderText = "Tên";
+            this.colTen.Name = "colTen";
+            // 
+            // colMaMon
+            // 
+            this.colMaMon.DataPropertyName = "MaMon";
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.colMaMon.DefaultCellStyle = dataGridViewCellStyle5;
+            this.colMaMon.HeaderText = "Mã môn";
+            this.colMaMon.Name = "colMaMon";
+            this.colMaMon.Width = 80;
+            // 
+            // colDiaChi
+            // 
+            this.colDiaChi.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.colDiaChi.DataPropertyName = "DiaChi";
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.colDiaChi.DefaultCellStyle = dataGridViewCellStyle6;
+            this.colDiaChi.HeaderText = "Địa chỉ";
+            this.colDiaChi.MinimumWidth = 200;
+            this.colDiaChi.Name = "colDiaChi";
+            this.colDiaChi.Width = 200;
+            // 
+            // colGT
+            // 
+            this.colGT.DataPropertyName = "GT";
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.colGT.DefaultCellStyle = dataGridViewCellStyle7;
+            this.colGT.HeaderText = "GT";
+            this.colGT.Name = "colGT";
+            this.colGT.Width = 80;
+            // 
+            // colNgaySinh
+            // 
+            this.colNgaySinh.DataPropertyName = "NgaySinh";
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.colNgaySinh.DefaultCellStyle = dataGridViewCellStyle8;
+            this.colNgaySinh.HeaderText = "Ngày sinh";
+            this.colNgaySinh.Name = "colNgaySinh";
+            // 
+            // colLuong
+            // 
+            this.colLuong.DataPropertyName = "Luong";
+            this.colLuong.HeaderText = "Lương";
+            this.colLuong.Name = "colLuong";
+            // 
+            // colSDT
+            // 
+            this.colSDT.DataPropertyName = "SDT";
+            this.colSDT.HeaderText = "SĐT";
+            this.colSDT.Name = "colSDT";
             // 
             // toolStrip2
             // 
@@ -201,81 +277,6 @@
             this.toolStrip1.Size = new System.Drawing.Size(100, 25);
             this.toolStrip1.TabIndex = 0;
             // 
-            // colMaGV
-            // 
-            this.colMaGV.DataPropertyName = "MaGV";
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.colMaGV.DefaultCellStyle = dataGridViewCellStyle2;
-            this.colMaGV.HeaderText = "Mã GV";
-            this.colMaGV.MinimumWidth = 50;
-            this.colMaGV.Name = "colMaGV";
-            // 
-            // colHo
-            // 
-            this.colHo.DataPropertyName = "Ho";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.colHo.DefaultCellStyle = dataGridViewCellStyle3;
-            this.colHo.HeaderText = "Họ";
-            this.colHo.Name = "colHo";
-            this.colHo.Width = 180;
-            // 
-            // colTen
-            // 
-            this.colTen.DataPropertyName = "Ten";
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.colTen.DefaultCellStyle = dataGridViewCellStyle4;
-            this.colTen.HeaderText = "Tên";
-            this.colTen.Name = "colTen";
-            // 
-            // colMaMon
-            // 
-            this.colMaMon.DataPropertyName = "MaMon";
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.colMaMon.DefaultCellStyle = dataGridViewCellStyle5;
-            this.colMaMon.HeaderText = "Mã môn";
-            this.colMaMon.Name = "colMaMon";
-            this.colMaMon.Width = 80;
-            // 
-            // colDiaChi
-            // 
-            this.colDiaChi.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.colDiaChi.DataPropertyName = "DiaChi";
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.colDiaChi.DefaultCellStyle = dataGridViewCellStyle6;
-            this.colDiaChi.HeaderText = "Địa chỉ";
-            this.colDiaChi.MinimumWidth = 200;
-            this.colDiaChi.Name = "colDiaChi";
-            this.colDiaChi.Width = 200;
-            // 
-            // colGT
-            // 
-            this.colGT.DataPropertyName = "GT";
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.colGT.DefaultCellStyle = dataGridViewCellStyle7;
-            this.colGT.HeaderText = "GT";
-            this.colGT.Name = "colGT";
-            this.colGT.Width = 80;
-            // 
-            // colNgaySinh
-            // 
-            this.colNgaySinh.DataPropertyName = "NgaySinh";
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.colNgaySinh.DefaultCellStyle = dataGridViewCellStyle8;
-            this.colNgaySinh.HeaderText = "Ngày sinh";
-            this.colNgaySinh.Name = "colNgaySinh";
-            // 
-            // colLuong
-            // 
-            this.colLuong.DataPropertyName = "Luong";
-            this.colLuong.HeaderText = "Lương";
-            this.colLuong.Name = "colLuong";
-            // 
-            // colSDT
-            // 
-            this.colSDT.DataPropertyName = "SDT";
-            this.colSDT.HeaderText = "SĐT";
-            this.colSDT.Name = "colSDT";
-            // 
             // frmTimGV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -285,6 +286,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "frmTimGV";
             this.Text = "frmTimGV";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmTimGV_FormClosed);
             this.Load += new System.EventHandler(this.frmTimGV_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);

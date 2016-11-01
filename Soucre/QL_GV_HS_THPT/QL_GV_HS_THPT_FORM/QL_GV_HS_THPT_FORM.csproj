@@ -31,6 +31,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
@@ -113,6 +114,12 @@
     <Compile Include="frmThemHS.Designer.cs">
       <DependentUpon>frmThemHS.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmThemtaikhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThemtaikhoan.Designer.cs">
+      <DependentUpon>frmThemtaikhoan.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmTimGV.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -176,6 +183,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmQLGD.resx">
       <DependentUpon>frmQLGD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQuantri.resx">
+      <DependentUpon>frmQuantri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThemtaikhoan.resx">
+      <DependentUpon>frmThemtaikhoan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmTimGV.resx">
       <DependentUpon>frmTimGV.cs</DependentUpon>

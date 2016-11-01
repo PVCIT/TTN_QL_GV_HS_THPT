@@ -63,7 +63,9 @@ namespace QL_GV_HS_THPT_FORM
 
         private void toolStripMenuItem1_Click_1(object sender, EventArgs e)
         {
-
+            frmMain frm = new frmMain();
+            frm.Show();
+            this.Dispose();
         }
 
         private void txtTimMaHS_Click(object sender, EventArgs e)
@@ -299,6 +301,13 @@ namespace QL_GV_HS_THPT_FORM
             }
             DataTable tbl = busHS.getHocsinh(dieukien);
             dgvHocSinh.DataSource = tbl;
+        }
+
+        private void frmHocsinh_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            frmMain frm = new frmMain();
+            frm.Show();
+            this.Dispose();
         }
     }
 }
