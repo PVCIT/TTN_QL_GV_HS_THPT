@@ -15,6 +15,19 @@ namespace QL_GV_HS_THPT_FORM
     {
         SQL_tblGiaovien gv = new SQL_tblGiaovien();
         EC_tblGiaovien teacher = new EC_tblGiaovien();
+        SQL_tblMonhoc mh = new SQL_tblMonhoc();
+        DataTable dt = new DataTable();
+        public void SetNull()
+        {
+            txtMaGV.Text = "";
+            txtHo.Text = "";
+            txtTen.Text = "";
+            dtpNS.Value = new DateTime(1900, 1, 1);
+            txtSDT.Text = "";
+            txtLuong.Text = "";
+            //txtMH.Text = "";
+            txtDiaChi.Text = "";
+        }
         public frmGiaovien()
         {
             InitializeComponent();
@@ -24,26 +37,36 @@ namespace QL_GV_HS_THPT_FORM
         {
             // TODO: This line of code loads data into the 'qL_GV_HS_THPTDataSet.tblGiaovien' table. You can move, or remove it, as needed.
             this.tblGiaovienTableAdapter.Fill(this.qL_GV_HS_THPTDataSet.tblGiaovien);
-            txtMaGV.DataBindings.Clear();
-            txtMaGV.DataBindings.Add("Text",grview_GV.DataSource,"MaGV");
-            txtHo.DataBindings.Clear();
-            txtHo.DataBindings.Add("Text", grview_GV.DataSource, "Ho");
-            txtTen.DataBindings.Clear();
-            txtTen.DataBindings.Add("Text", grview_GV.DataSource, "Ten");
-            txtGT.DataBindings.Clear();
-            txtGT.DataBindings.Add("Text", grview_GV.DataSource, "GT");
-            txtNS.DataBindings.Clear();
-            txtNS.DataBindings.Add("Text", grview_GV.DataSource, "NgaySinh");
-            txtSDT.DataBindings.Clear();
-            txtSDT.DataBindings.Add("Text", grview_GV.DataSource, "SDT");
-            txtDiaChi.DataBindings.Clear();
-            txtDiaChi.DataBindings.Add("Text", grview_GV.DataSource, "DiaChi");
-            txtLuong.DataBindings.Clear();
-            txtLuong.DataBindings.Add("Text", grview_GV.DataSource, "Luong");
-            txtMH.DataBindings.Clear();
-            txtMH.DataBindings.Add("Text", grview_GV.DataSource, "MaMon");
+            KhoaDieuKhien();
         }
+        public void MoDieuKhien()
+        {
+            txtMaGV.ReadOnly = false;
+            txtHo.ReadOnly = false;
+            txtTen.ReadOnly = false;
+            txtSDT.ReadOnly = false;
+            txtDiaChi.ReadOnly = false;
+            txtLuong.ReadOnly = false;
+            txtMH.ReadOnly = false;
+        }
+        public void KhoaDieuKhien()
+        {
+            txtMaGV.ReadOnly = true;
+            txtHo.ReadOnly = true;
+            txtTen.ReadOnly = true;
+            dtpNS.Value = new DateTime(1900,1,1);
+            txtSDT.ReadOnly = true;
+            txtDiaChi.ReadOnly = true;
+            txtLuong.ReadOnly = true;
+            txtMH.ReadOnly = true;
 
+            //button
+            btnAdd.Enabled = true;
+            btnDel.Enabled = true;
+            btnEdit.Enabled = true;
+            btnRefresh.Enabled = false;
+            btnSave.Enabled = false;
+        }
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
@@ -63,31 +86,22 @@ namespace QL_GV_HS_THPT_FORM
         private void btnRefresh_Click(object sender, EventArgs e)
         {
             grview_GV.DataSource = gv.getAllgiaovien();
-            txtMaGV.DataBindings.Clear();
-            txtMaGV.DataBindings.Add("Text", grview_GV.DataSource, "MaGV");
-            txtHo.DataBindings.Clear();
-            txtHo.DataBindings.Add("Text", grview_GV.DataSource, "Ho");
-            txtTen.DataBindings.Clear();
-            txtTen.DataBindings.Add("Text", grview_GV.DataSource, "Ten");
-            txtGT.DataBindings.Clear();
-            txtGT.DataBindings.Add("Text", grview_GV.DataSource, "GT");
-            txtNS.DataBindings.Clear();
-            txtNS.DataBindings.Add("Text", grview_GV.DataSource, "NgaySinh");
-            txtSDT.DataBindings.Clear();
-            txtSDT.DataBindings.Add("Text", grview_GV.DataSource, "SDT");
-            txtDiaChi.DataBindings.Clear();
-            txtDiaChi.DataBindings.Add("Text", grview_GV.DataSource, "DiaChi");
-            txtLuong.DataBindings.Clear();
-            txtLuong.DataBindings.Add("Text", grview_GV.DataSource, "Luong");
-            txtMH.DataBindings.Clear();
-            txtMH.DataBindings.Add("Text", grview_GV.DataSource, "MaMon");
+            btnAdd.Enabled = true;
+            btnDel.Enabled = true;
+            btnEdit.Enabled = true;
+            btnSave.Enabled = false;
+            btnRefresh.Enabled = false;
         }
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
-            frmSuaGV EditGV = new frmSuaGV();
-            EditGV.Show();
-
+            MoDieuKhien();
+            btnSave.Enabled = true;
+            btnRefresh.Enabled = true;
+            btnAdd.Enabled = false;
+            btnDel.Enabled = false;
+            cbGT.DataSource = gv.GioiTinh();
+            cbGT.DisplayMember = "GT";
         }
 
         private void btnDel_Click(object sender, EventArgs e)
@@ -99,6 +113,40 @@ namespace QL_GV_HS_THPT_FORM
             {
                 gv.delGiaovien(teacher);
             }
+        }
+
+        private void grview_GV_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int dong = e.RowIndex;/*biến dòng :kich vào dòng thì chỉ số dòng đc lưu vào biến dòng */
+            try
+            {
+                txtMaGV.Text = grview_GV.Rows[dong].Cells[0].Value.ToString();
+                txtHo.Text = grview_GV.Rows[dong].Cells[1].Value.ToString();
+                txtTen.Text = grview_GV.Rows[dong].Cells[2].Value.ToString();
+                cbGT.Text = grview_GV.Rows[dong].Cells[3].Value.ToString();
+                dtpNS.Text = grview_GV.Rows[dong].Cells[4].Value.ToString();
+                txtSDT.Text = grview_GV.Rows[dong].Cells[5].Value.ToString();
+                txtDiaChi.Text = grview_GV.Rows[dong].Cells[6].Value.ToString();
+                txtLuong.Text = grview_GV.Rows[dong].Cells[7].Value.ToString();
+                txtMH.Text = grview_GV.Rows[dong].Cells[8].Value.ToString();
+            }
+            catch {}
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            
+            teacher.MaGV = txtMaGV.Text;
+            teacher.Ho = txtHo.Text;
+            teacher.Ten = txtTen.Text;
+            teacher.NgaySinh = dtpNS.Value.ToShortDateString();
+            teacher.GT = cbGT.Text;
+            teacher.Luong = txtLuong.Text;
+            teacher.DiaChi = txtDiaChi.Text;
+            teacher.MaMon = txtMH.Text;
+            teacher.SDT = txtSDT.Text;
+            gv.updateGiaovien(teacher);
+            MessageBox.Show("Bạn đã cập nhật thành công!!!","Thông Báo",MessageBoxButtons.OK);
         }
     }
 }

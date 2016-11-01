@@ -15,6 +15,15 @@ namespace QL_GV_HS_THPT_FORM
     {
         SQL_tblGiaovien giaovien = new SQL_tblGiaovien();
         EC_tblGiaovien gv = new EC_tblGiaovien();
+        public void SetNull()
+        {
+            txtHo.Text = "";
+            txtTen.Text = "";
+            txtDiaChi.Text = "";
+            txtGV.Text = "";
+            txtSDT.Text = "";
+            txtLuong.Text = "";
+        }
         public frmThemGV()
         {
             InitializeComponent();
@@ -43,33 +52,33 @@ namespace QL_GV_HS_THPT_FORM
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
-            if(txtGV.Text=="")
+            if(txtGV.Text == "")
             {
-                lbMessage.Text = "Bạn chưa điền đủ thông tin!!!";  
-            }
-            gv.MaGV = txtGV.Text;
-            gv.MaMon = cbMH.Text;
-            gv.Ho = txtHo.Text;
-            gv.Ten = txtTen.Text;
-            gv.NgaySinh = dtp.Value.ToShortDateString();
-            gv.SDT = txtSDT.Text;
-            gv.DiaChi = txtDiaChi.Text;
-            if (chkNam.Checked == true)
-            {
-                    gv.GT = "Nam";
+                lbMessage.Text = "Bạn chưa điền đủ thông tin!!!";
+                return;
             }
             else
             {
-                 gv.GT = "Nữ";
+                gv.MaGV = txtGV.Text;
+                gv.MaMon = cbMH.Text;
+                gv.Ho = txtHo.Text;
+                gv.Ten = txtTen.Text;
+                gv.NgaySinh = dtp.Value.ToShortDateString();
+                gv.SDT = txtSDT.Text;
+                gv.DiaChi = txtDiaChi.Text;
+                if (chkNam.Checked == true)
+                {
+                    gv.GT = "Nam";
+                }
+                else
+                {
+                    gv.GT = "Nữ";
+                }
+                giaovien.addGiaovien(gv);
+                MessageBox.Show("Bạn đã lưu thành công!!!", "Thông Báo", MessageBoxButtons.OK);
+                SetNull();
             }
-            giaovien.addGiaovien(gv);
-            MessageBox.Show("Bạn đã lưu thành công!!!","Thông Báo", MessageBoxButtons.OK);
-            txtHo.Text = "";
-            txtTen.Text = "";
-            txtDiaChi.Text = "";
-            txtGV.Text = "";
-            txtSDT.Text = "";
-            txtLuong.Text = "";
+            
         }
         private void chkNam_CheckedChanged(object sender, EventArgs e)
         {

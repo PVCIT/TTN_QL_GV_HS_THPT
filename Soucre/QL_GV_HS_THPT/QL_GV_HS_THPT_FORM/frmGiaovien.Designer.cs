@@ -47,12 +47,9 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.txtMaGV = new System.Windows.Forms.TextBox();
-            this.txtGT = new System.Windows.Forms.TextBox();
             this.txtTen = new System.Windows.Forms.TextBox();
             this.txtHo = new System.Windows.Forms.TextBox();
-            this.txtNS = new System.Windows.Forms.TextBox();
             this.txtSDT = new System.Windows.Forms.TextBox();
             this.txtMH = new System.Windows.Forms.TextBox();
             this.txtLuong = new System.Windows.Forms.TextBox();
@@ -67,10 +64,11 @@
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.dtpNS = new System.Windows.Forms.DateTimePicker();
+            this.cbGT = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.grview_GV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblGiaovienBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.qL_GV_HS_THPTDataSet)).BeginInit();
-            this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -89,11 +87,11 @@
             this.luongDataGridViewTextBoxColumn,
             this.maMonDataGridViewTextBoxColumn});
             this.grview_GV.DataSource = this.tblGiaovienBindingSource;
-            this.grview_GV.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.grview_GV.Location = new System.Drawing.Point(0, 0);
+            this.grview_GV.Location = new System.Drawing.Point(12, 305);
             this.grview_GV.Name = "grview_GV";
-            this.grview_GV.Size = new System.Drawing.Size(757, 225);
+            this.grview_GV.Size = new System.Drawing.Size(666, 225);
             this.grview_GV.TabIndex = 0;
+            this.grview_GV.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grview_GV_CellClick);
             this.grview_GV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // maGVDataGridViewTextBoxColumn
@@ -163,7 +161,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(14, 29);
+            this.label1.Location = new System.Drawing.Point(17, 29);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(40, 13);
             this.label1.TabIndex = 1;
@@ -172,7 +170,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(14, 64);
+            this.label2.Location = new System.Drawing.Point(17, 64);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(21, 13);
             this.label2.TabIndex = 2;
@@ -181,7 +179,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(223, 29);
+            this.label3.Location = new System.Drawing.Point(516, 64);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(51, 13);
             this.label3.TabIndex = 3;
@@ -190,7 +188,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(14, 104);
+            this.label4.Location = new System.Drawing.Point(319, 64);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(26, 13);
             this.label4.TabIndex = 4;
@@ -199,7 +197,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(223, 64);
+            this.label5.Location = new System.Drawing.Point(17, 104);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(56, 13);
             this.label5.TabIndex = 5;
@@ -208,87 +206,65 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(223, 104);
+            this.label6.Location = new System.Drawing.Point(319, 136);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(75, 13);
+            this.label6.Size = new System.Drawing.Size(29, 13);
             this.label6.TabIndex = 6;
-            this.label6.Text = "Số Điện Thoại";
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.grview_GV);
-            this.panel1.Location = new System.Drawing.Point(0, 218);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(757, 225);
-            this.panel1.TabIndex = 7;
+            this.label6.Text = "SDT";
             // 
             // txtMaGV
             // 
-            this.txtMaGV.Location = new System.Drawing.Point(79, 26);
+            this.txtMaGV.Location = new System.Drawing.Point(88, 26);
             this.txtMaGV.Name = "txtMaGV";
-            this.txtMaGV.Size = new System.Drawing.Size(108, 20);
+            this.txtMaGV.Size = new System.Drawing.Size(94, 20);
             this.txtMaGV.TabIndex = 8;
-            // 
-            // txtGT
-            // 
-            this.txtGT.Location = new System.Drawing.Point(313, 25);
-            this.txtGT.Name = "txtGT";
-            this.txtGT.Size = new System.Drawing.Size(100, 20);
-            this.txtGT.TabIndex = 9;
             // 
             // txtTen
             // 
-            this.txtTen.Location = new System.Drawing.Point(79, 101);
+            this.txtTen.Location = new System.Drawing.Point(371, 61);
             this.txtTen.Name = "txtTen";
             this.txtTen.Size = new System.Drawing.Size(108, 20);
             this.txtTen.TabIndex = 10;
             // 
             // txtHo
             // 
-            this.txtHo.Location = new System.Drawing.Point(79, 61);
+            this.txtHo.Location = new System.Drawing.Point(88, 61);
             this.txtHo.Name = "txtHo";
-            this.txtHo.Size = new System.Drawing.Size(108, 20);
+            this.txtHo.Size = new System.Drawing.Size(156, 20);
             this.txtHo.TabIndex = 11;
-            // 
-            // txtNS
-            // 
-            this.txtNS.Location = new System.Drawing.Point(313, 61);
-            this.txtNS.Name = "txtNS";
-            this.txtNS.Size = new System.Drawing.Size(100, 20);
-            this.txtNS.TabIndex = 12;
             // 
             // txtSDT
             // 
-            this.txtSDT.Location = new System.Drawing.Point(313, 101);
+            this.txtSDT.Location = new System.Drawing.Point(371, 132);
             this.txtSDT.Name = "txtSDT";
-            this.txtSDT.Size = new System.Drawing.Size(100, 20);
+            this.txtSDT.Size = new System.Drawing.Size(112, 20);
             this.txtSDT.TabIndex = 13;
             // 
             // txtMH
             // 
-            this.txtMH.Location = new System.Drawing.Point(542, 97);
+            this.txtMH.Location = new System.Drawing.Point(371, 176);
             this.txtMH.Name = "txtMH";
             this.txtMH.Size = new System.Drawing.Size(112, 20);
             this.txtMH.TabIndex = 19;
             // 
             // txtLuong
             // 
-            this.txtLuong.Location = new System.Drawing.Point(542, 61);
+            this.txtLuong.Location = new System.Drawing.Point(88, 176);
             this.txtLuong.Name = "txtLuong";
-            this.txtLuong.Size = new System.Drawing.Size(112, 20);
+            this.txtLuong.Size = new System.Drawing.Size(156, 20);
             this.txtLuong.TabIndex = 18;
             // 
             // txtDiaChi
             // 
-            this.txtDiaChi.Location = new System.Drawing.Point(542, 26);
+            this.txtDiaChi.Location = new System.Drawing.Point(88, 136);
             this.txtDiaChi.Name = "txtDiaChi";
-            this.txtDiaChi.Size = new System.Drawing.Size(112, 20);
+            this.txtDiaChi.Size = new System.Drawing.Size(156, 20);
             this.txtDiaChi.TabIndex = 17;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(480, 104);
+            this.label7.Location = new System.Drawing.Point(319, 179);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(46, 13);
             this.label7.TabIndex = 16;
@@ -297,7 +273,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(480, 68);
+            this.label8.Location = new System.Drawing.Point(17, 179);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(37, 13);
             this.label8.TabIndex = 15;
@@ -306,7 +282,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(480, 29);
+            this.label9.Location = new System.Drawing.Point(17, 139);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(40, 13);
             this.label9.TabIndex = 14;
@@ -320,7 +296,7 @@
             // 
             this.btnRefresh.Image = global::QL_GV_HS_THPT_FORM.Properties.Resources._1476781463_Refresh;
             this.btnRefresh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRefresh.Location = new System.Drawing.Point(238, 167);
+            this.btnRefresh.Location = new System.Drawing.Point(262, 236);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btnRefresh.Size = new System.Drawing.Size(81, 45);
@@ -334,7 +310,7 @@
             // 
             this.btnDel.Image = global::QL_GV_HS_THPT_FORM.Properties.Resources._1476781406_Delete;
             this.btnDel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDel.Location = new System.Drawing.Point(325, 167);
+            this.btnDel.Location = new System.Drawing.Point(349, 236);
             this.btnDel.Name = "btnDel";
             this.btnDel.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btnDel.Size = new System.Drawing.Size(66, 45);
@@ -348,19 +324,20 @@
             // 
             this.btnSave.Image = global::QL_GV_HS_THPT_FORM.Properties.Resources._1476781405_Save;
             this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSave.Location = new System.Drawing.Point(165, 167);
+            this.btnSave.Location = new System.Drawing.Point(189, 236);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(67, 45);
             this.btnSave.TabIndex = 22;
             this.btnSave.Text = "Lưu";
             this.btnSave.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnEdit
             // 
             this.btnEdit.Image = global::QL_GV_HS_THPT_FORM.Properties.Resources._1476781433_Edit_page;
             this.btnEdit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEdit.Location = new System.Drawing.Point(91, 166);
+            this.btnEdit.Location = new System.Drawing.Point(115, 235);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(68, 45);
             this.btnEdit.TabIndex = 21;
@@ -373,7 +350,7 @@
             // 
             this.btnAdd.Image = global::QL_GV_HS_THPT_FORM.Properties.Resources._1476781401_Add;
             this.btnAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAdd.Location = new System.Drawing.Point(12, 166);
+            this.btnAdd.Location = new System.Drawing.Point(36, 235);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(73, 45);
             this.btnAdd.TabIndex = 20;
@@ -384,6 +361,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.cbGT);
+            this.groupBox1.Controls.Add(this.dtpNS);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.txtMaGV);
             this.groupBox1.Controls.Add(this.label2);
@@ -393,9 +372,7 @@
             this.groupBox1.Controls.Add(this.txtMH);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.txtLuong);
-            this.groupBox1.Controls.Add(this.txtGT);
             this.groupBox1.Controls.Add(this.txtDiaChi);
-            this.groupBox1.Controls.Add(this.txtNS);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.txtSDT);
             this.groupBox1.Controls.Add(this.label8);
@@ -404,23 +381,38 @@
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(733, 148);
+            this.groupBox1.Size = new System.Drawing.Size(661, 209);
             this.groupBox1.TabIndex = 25;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông Tin Giáo Viên";
+            // 
+            // dtpNS
+            // 
+            this.dtpNS.Location = new System.Drawing.Point(88, 98);
+            this.dtpNS.Name = "dtpNS";
+            this.dtpNS.Size = new System.Drawing.Size(201, 20);
+            this.dtpNS.TabIndex = 20;
+            // 
+            // cbGT
+            // 
+            this.cbGT.FormattingEnabled = true;
+            this.cbGT.Location = new System.Drawing.Point(573, 60);
+            this.cbGT.Name = "cbGT";
+            this.cbGT.Size = new System.Drawing.Size(68, 21);
+            this.cbGT.TabIndex = 21;
             // 
             // frmGiaovien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(757, 443);
+            this.ClientSize = new System.Drawing.Size(690, 542);
+            this.Controls.Add(this.grview_GV);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.btnDel);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.btnAdd);
-            this.Controls.Add(this.panel1);
             this.Name = "frmGiaovien";
             this.Text = "frmGiaoVien";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmGiaovien_FormClosed);
@@ -428,7 +420,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.grview_GV)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblGiaovienBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.qL_GV_HS_THPTDataSet)).EndInit();
-            this.panel1.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -444,12 +435,9 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox txtMaGV;
-        private System.Windows.Forms.TextBox txtGT;
         private System.Windows.Forms.TextBox txtTen;
         private System.Windows.Forms.TextBox txtHo;
-        private System.Windows.Forms.TextBox txtNS;
         private System.Windows.Forms.TextBox txtSDT;
         private System.Windows.Forms.TextBox txtMH;
         private System.Windows.Forms.TextBox txtLuong;
@@ -475,5 +463,7 @@
         private System.Windows.Forms.Button btnDel;
         private System.Windows.Forms.Button btnRefresh;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.DateTimePicker dtpNS;
+        private System.Windows.Forms.ComboBox cbGT;
     }
 }

@@ -20,7 +20,7 @@ namespace QL_GV_HS_THPT_DAL
         //Sua du lieu
         public void updateGiaovien(EC_tblGiaovien et)
         {
-            cn.ThucThiCauLenhSQL(@"UPDATE   tblGiaovien   SET  Ho =N'"+et.Ho+"', Ten =N'"+et.Ten+"', GT =N'"+et.GT+"', NgaySinh = '"+et.NgaySinh+"', SDT = '"+et.SDT+"', Luong = '"+et.Luong+"', DiaChi = N'"+et.DiaChi+"', MaMon = '"+et.MaMon+"' WHERE MaGV = '"+et.MaGV+"'");
+            cn.ThucThiCauLenhSQL(@"UPDATE   tblGiaovien   SET  Ho = N'"+et.Ho+"', Ten = N'"+et.Ten+"', GT = N'"+et.GT+"', NgaySinh = '"+et.NgaySinh+"', SDT = '"+et.SDT+"', Luong = '"+et.Luong+"', DiaChi = N'"+et.DiaChi+"', MaMon = '"+et.MaMon+"' WHERE MaGV = '"+et.MaGV+"'");
         }
         //Xoa du lieu
         public void delGiaovien(EC_tblGiaovien et)
@@ -35,6 +35,10 @@ namespace QL_GV_HS_THPT_DAL
         public DataTable getGiaovien(string dk)
         {
             return cn.getDatatable(@"SELECT * FROM tblGiaovien " + dk);
-        }   
+        }
+        public DataTable GioiTinh()
+        {
+            return cn.getDatatable(@"SELECT DISTINCT GT FROM tblGiaoVien");
+        }
     }
 }

@@ -80,9 +80,9 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(21, 70);
+            this.groupBox1.Location = new System.Drawing.Point(28, 72);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(616, 258);
+            this.groupBox1.Size = new System.Drawing.Size(609, 251);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             // 
@@ -90,7 +90,7 @@
             // 
             this.lbMessage.AutoSize = true;
             this.lbMessage.ForeColor = System.Drawing.Color.Red;
-            this.lbMessage.Location = new System.Drawing.Point(39, 225);
+            this.lbMessage.Location = new System.Drawing.Point(37, 218);
             this.lbMessage.Name = "lbMessage";
             this.lbMessage.Size = new System.Drawing.Size(10, 13);
             this.lbMessage.TabIndex = 26;
@@ -147,7 +147,7 @@
             // 
             this.dtp.CustomFormat = "dd/MM/yyyy";
             this.dtp.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
-            this.dtp.Location = new System.Drawing.Point(104, 110);
+            this.dtp.Location = new System.Drawing.Point(104, 104);
             this.dtp.Name = "dtp";
             this.dtp.Size = new System.Drawing.Size(200, 20);
             this.dtp.TabIndex = 20;
@@ -165,21 +165,21 @@
             // 
             // txtLuong
             // 
-            this.txtLuong.Location = new System.Drawing.Point(378, 193);
+            this.txtLuong.Location = new System.Drawing.Point(371, 186);
             this.txtLuong.Name = "txtLuong";
             this.txtLuong.Size = new System.Drawing.Size(113, 20);
             this.txtLuong.TabIndex = 17;
             // 
             // txtSDT
             // 
-            this.txtSDT.Location = new System.Drawing.Point(104, 193);
+            this.txtSDT.Location = new System.Drawing.Point(104, 186);
             this.txtSDT.Name = "txtSDT";
             this.txtSDT.Size = new System.Drawing.Size(128, 20);
             this.txtSDT.TabIndex = 15;
             // 
             // txtDiaChi
             // 
-            this.txtDiaChi.Location = new System.Drawing.Point(104, 150);
+            this.txtDiaChi.Location = new System.Drawing.Point(104, 147);
             this.txtDiaChi.Name = "txtDiaChi";
             this.txtDiaChi.Size = new System.Drawing.Size(200, 20);
             this.txtDiaChi.TabIndex = 14;
@@ -187,7 +187,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(313, 196);
+            this.label7.Location = new System.Drawing.Point(320, 193);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(37, 13);
             this.label7.TabIndex = 13;
@@ -196,7 +196,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(39, 196);
+            this.label8.Location = new System.Drawing.Point(37, 193);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(59, 13);
             this.label8.TabIndex = 12;
@@ -205,7 +205,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(35, 153);
+            this.label10.Location = new System.Drawing.Point(37, 150);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(41, 13);
             this.label10.TabIndex = 10;
@@ -293,7 +293,7 @@
             // 
             this.btnThoat.Image = global::QL_GV_HS_THPT_FORM.Properties.Resources._1476781399_Cancel;
             this.btnThoat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThoat.Location = new System.Drawing.Point(316, 346);
+            this.btnThoat.Location = new System.Drawing.Point(310, 329);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(75, 46);
             this.btnThoat.TabIndex = 2;
@@ -306,7 +306,7 @@
             // 
             this.btnLuu.Image = global::QL_GV_HS_THPT_FORM.Properties.Resources._1476781405_Save;
             this.btnLuu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLuu.Location = new System.Drawing.Point(149, 346);
+            this.btnLuu.Location = new System.Drawing.Point(149, 329);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(72, 46);
             this.btnLuu.TabIndex = 1;
@@ -319,7 +319,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(658, 420);
+            this.ClientSize = new System.Drawing.Size(658, 387);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.btnLuu);

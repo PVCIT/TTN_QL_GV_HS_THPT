@@ -83,12 +83,6 @@
     <Compile Include="frmQuantri.Designer.cs">
       <DependentUpon>frmQuantri.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmSuaGV.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmSuaGV.Designer.cs">
-      <DependentUpon>frmSuaGV.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmSuaHS.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -177,9 +171,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmSuaGV.resx">
-      <DependentUpon>frmSuaGV.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmThemGV.resx">
       <DependentUpon>frmThemGV.cs</DependentUpon>
