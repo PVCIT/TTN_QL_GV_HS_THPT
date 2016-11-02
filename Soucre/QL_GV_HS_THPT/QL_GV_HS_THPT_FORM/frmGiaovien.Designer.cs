@@ -30,16 +30,18 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmGiaovien));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cbTenMon = new System.Windows.Forms.ComboBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.txtSDT = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.cbGT = new System.Windows.Forms.ComboBox();
             this.dtpNS = new System.Windows.Forms.DateTimePicker();
             this.txtMaMon = new System.Windows.Forms.TextBox();
             this.txtLuong = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.txtDiaChi = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.txtTen = new System.Windows.Forms.TextBox();
             this.txtHo = new System.Windows.Forms.TextBox();
@@ -55,8 +57,6 @@
             this.btnSave = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
-            this.label9 = new System.Windows.Forms.Label();
-            this.cbTenMon = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvGiaoVien)).BeginInit();
             this.SuspendLayout();
@@ -89,6 +89,23 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông Tin Giáo Viên";
+            // 
+            // cbTenMon
+            // 
+            this.cbTenMon.FormattingEnabled = true;
+            this.cbTenMon.Location = new System.Drawing.Point(564, 34);
+            this.cbTenMon.Name = "cbTenMon";
+            this.cbTenMon.Size = new System.Drawing.Size(100, 21);
+            this.cbTenMon.TabIndex = 24;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(508, 37);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(50, 13);
+            this.label9.TabIndex = 23;
+            this.label9.Text = "Tên Môn";
             // 
             // txtSDT
             // 
@@ -136,6 +153,15 @@
             this.txtLuong.Size = new System.Drawing.Size(100, 20);
             this.txtLuong.TabIndex = 15;
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(27, 159);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(41, 13);
+            this.label7.TabIndex = 10;
+            this.label7.Text = "Địa Chỉ";
+            // 
             // txtDiaChi
             // 
             this.txtDiaChi.Location = new System.Drawing.Point(96, 156);
@@ -160,15 +186,6 @@
             this.label6.Size = new System.Drawing.Size(37, 13);
             this.label6.TabIndex = 11;
             this.label6.Text = "Lương";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(27, 159);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(41, 13);
-            this.label7.TabIndex = 10;
-            this.label7.Text = "Địa Chỉ";
             // 
             // label8
             // 
@@ -323,23 +340,6 @@
             this.btnAdd.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(508, 37);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(50, 13);
-            this.label9.TabIndex = 23;
-            this.label9.Text = "Tên Môn";
-            // 
-            // cbTenMon
-            // 
-            this.cbTenMon.FormattingEnabled = true;
-            this.cbTenMon.Location = new System.Drawing.Point(564, 34);
-            this.cbTenMon.Name = "cbTenMon";
-            this.cbTenMon.Size = new System.Drawing.Size(100, 21);
-            this.cbTenMon.TabIndex = 24;
             // 
             // frmGiaovien
             // 
