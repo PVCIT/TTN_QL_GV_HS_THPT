@@ -56,6 +56,7 @@ namespace QL_GV_HS_THPT_FORM
                 gv.Ten = txtTen.Text;
                 gv.NgaySinh = dtpNS.Value.ToShortDateString();
                 gv.SDT = txtSDT.Text;
+                gv.Luong = txtLuong.Text;
                 gv.DiaChi = txtDiaChi.Text;
                 if (chkNam.Checked == true)
                 {
