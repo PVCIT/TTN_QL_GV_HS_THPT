@@ -34,5 +34,9 @@ namespace QL_GV_HS_THPT_DAL
         {
             return cn.getDatatable(@"SELECT * FROM tblMonhoc " + dk);
         }
+        public DataTable TenMon(string dk)
+        {
+            return cn.getDatatable(@"SELECT TenMon FROM tblMonhoc " + dk);
+        }
     }
 }

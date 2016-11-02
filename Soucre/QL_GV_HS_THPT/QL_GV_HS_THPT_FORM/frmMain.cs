@@ -96,6 +96,16 @@ namespace QL_GV_HS_THPT_FORM
             }
         }
 
+        private void danhSáchGiáoViênToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmGiaovien gv = new frmGiaovien();
+            gv.Show();
+        }
 
+        private void thêmGiáoViênToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frmThemGV themgv = new frmThemGV();
+            themgv.Show();
+        }
     }
 }

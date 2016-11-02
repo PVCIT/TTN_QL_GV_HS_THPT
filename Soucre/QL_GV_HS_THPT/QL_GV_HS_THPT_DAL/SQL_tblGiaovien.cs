@@ -52,5 +52,9 @@ namespace QL_GV_HS_THPT_DAL
         {
             return cn.getDatatable(@"SELECT * FROM tblGiaovien " + dk);
         }
+        public DataTable getGT()
+        {
+            return cn.getDatatable(@"SELECT distinct GT FROM tblGiaovien");
+        }
     }
 }
