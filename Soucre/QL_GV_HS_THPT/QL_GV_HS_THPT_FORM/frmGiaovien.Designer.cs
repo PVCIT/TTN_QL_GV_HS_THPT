@@ -345,7 +345,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(749, 446);
+            this.ClientSize = new System.Drawing.Size(745, 446);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnDel);
             this.Controls.Add(this.btnRefresh);
@@ -355,7 +355,7 @@
             this.Controls.Add(this.dgvGiaoVien);
             this.Controls.Add(this.groupBox1);
             this.Name = "frmGiaovien";
-            this.Text = "frmGiaoVien";
+            this.Text = "Giáo Viên";
             this.Load += new System.EventHandler(this.frmGiaovien_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
