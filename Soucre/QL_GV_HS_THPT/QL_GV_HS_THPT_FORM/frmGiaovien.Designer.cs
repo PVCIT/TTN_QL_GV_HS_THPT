@@ -83,7 +83,7 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(21, 18);
+            this.groupBox1.Location = new System.Drawing.Point(21, 7);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(700, 193);
             this.groupBox1.TabIndex = 0;
@@ -257,9 +257,9 @@
             // dgvGiaoVien
             // 
             this.dgvGiaoVien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvGiaoVien.Location = new System.Drawing.Point(21, 270);
+            this.dgvGiaoVien.Location = new System.Drawing.Point(21, 257);
             this.dgvGiaoVien.Name = "dgvGiaoVien";
-            this.dgvGiaoVien.Size = new System.Drawing.Size(700, 164);
+            this.dgvGiaoVien.Size = new System.Drawing.Size(700, 177);
             this.dgvGiaoVien.TabIndex = 1;
             this.dgvGiaoVien.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
@@ -267,7 +267,7 @@
             // 
             this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
             this.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExit.Location = new System.Drawing.Point(459, 217);
+            this.btnExit.Location = new System.Drawing.Point(459, 204);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(74, 47);
             this.btnExit.TabIndex = 7;
@@ -280,7 +280,7 @@
             // 
             this.btnDel.Image = ((System.Drawing.Image)(resources.GetObject("btnDel.Image")));
             this.btnDel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDel.Location = new System.Drawing.Point(382, 217);
+            this.btnDel.Location = new System.Drawing.Point(382, 204);
             this.btnDel.Name = "btnDel";
             this.btnDel.Size = new System.Drawing.Size(68, 47);
             this.btnDel.TabIndex = 6;
@@ -293,7 +293,7 @@
             // 
             this.btnRefresh.Image = ((System.Drawing.Image)(resources.GetObject("btnRefresh.Image")));
             this.btnRefresh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRefresh.Location = new System.Drawing.Point(287, 217);
+            this.btnRefresh.Location = new System.Drawing.Point(287, 204);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(84, 47);
             this.btnRefresh.TabIndex = 5;
@@ -306,7 +306,7 @@
             // 
             this.btnSave.Image = ((System.Drawing.Image)(resources.GetObject("btnSave.Image")));
             this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSave.Location = new System.Drawing.Point(201, 217);
+            this.btnSave.Location = new System.Drawing.Point(201, 204);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(75, 47);
             this.btnSave.TabIndex = 4;
@@ -319,7 +319,7 @@
             // 
             this.btnEdit.Image = ((System.Drawing.Image)(resources.GetObject("btnEdit.Image")));
             this.btnEdit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEdit.Location = new System.Drawing.Point(120, 217);
+            this.btnEdit.Location = new System.Drawing.Point(120, 204);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(71, 47);
             this.btnEdit.TabIndex = 3;
@@ -332,7 +332,7 @@
             // 
             this.btnAdd.Image = ((System.Drawing.Image)(resources.GetObject("btnAdd.Image")));
             this.btnAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAdd.Location = new System.Drawing.Point(36, 217);
+            this.btnAdd.Location = new System.Drawing.Point(36, 204);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(75, 47);
             this.btnAdd.TabIndex = 2;

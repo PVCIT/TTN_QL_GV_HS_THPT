@@ -13,6 +13,7 @@ namespace QL_GV_HS_THPT_FORM
 {
     public partial class frmGiaovien : Form
     {
+        int dong = -1;
         SQL_tblGiaovien gv = new SQL_tblGiaovien();
         SQL_tblMonhoc MH = new SQL_tblMonhoc();
         EC_tblGiaovien teacher = new EC_tblGiaovien();
@@ -58,7 +59,7 @@ namespace QL_GV_HS_THPT_FORM
         {
             try
             {
-                int dong = e.RowIndex;
+                dong = e.RowIndex;
                 txtMaGV.Text = dgvGiaoVien.Rows[dong].Cells[0].Value.ToString();
                 txtHo.Text = dgvGiaoVien.Rows[dong].Cells[1].Value.ToString();
                 txtTen.Text = dgvGiaoVien.Rows[dong].Cells[2].Value.ToString();
@@ -90,6 +91,11 @@ namespace QL_GV_HS_THPT_FORM
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
+            if (dong < 0)
+            {
+                MessageBox.Show("Chưa chọn giáo viên để sửa!");
+                return;
+            }
             MoDieuKhien();
             cbGT.DataSource= gv.getField("GT");
             cbGT.DisplayMember = "GT";
@@ -112,9 +118,9 @@ namespace QL_GV_HS_THPT_FORM
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-            DialogResult traloi;
-            traloi = MessageBox.Show("Bạn có muốn thoát", "Thông Báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
-            if (traloi == DialogResult.OK) this.Close();
+            frmMain frm = new frmMain();
+            frm.Show();
+            this.Dispose();
         }
 
         private void btnDel_Click(object sender, EventArgs e)

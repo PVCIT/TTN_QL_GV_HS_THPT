@@ -12,17 +12,17 @@ namespace QL_GV_HS_THPT_BUS
     public class BUS_tblGiaovien
     {
         SQL_tblGiaovien bus = new SQL_tblGiaovien();
-        public void addHocsinh(EC_tblGiaovien et)
+        public void addGiaovien(EC_tblGiaovien et)
         {
             bus.addGiaovien(et);
         }
         //Sua du lieu
-        public void updateHocsinh(EC_tblGiaovien et)
+        public void updateGiaovien(EC_tblGiaovien et)
         {
             bus.updateGiaovien(et);
         }
         //Xoa du lieu
-        public void delHocsinh(EC_tblGiaovien et)
+        public void delGiaovien(EC_tblGiaovien et)
         {
             bus.delGiaovien(et);
         }

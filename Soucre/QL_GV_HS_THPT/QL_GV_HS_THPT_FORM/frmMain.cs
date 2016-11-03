@@ -30,23 +30,6 @@ namespace QL_GV_HS_THPT_FORM
             lblHi.Text += ConfigurationManager.AppSettings.Get("Username");
         }
 
-        private void nhậpHọcSinhToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmHocsinh frmHS = new frmHocsinh("TimKiem");
-            this.Hide();
-            
-            //frmHS.TopLevel = false;
-           // pnlMain.Controls.Add(frmGV);
-            frmHS.Show();
-        }
-
-        private void thêmGiáoViênToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmTimGV frmGV = new frmTimGV();
-            this.Hide();
-            frmGV.Show();
-        }
-
         private void frmMain_FormClosed_1(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
@@ -58,13 +41,6 @@ namespace QL_GV_HS_THPT_FORM
             frmQlgd.Show();
             this.Dispose();
             
-        }
-
-        private void đăngKýGiảngDạyToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmQLGD frm = new frmQLGD();
-            frm.Show();
-            this.Hide();
         }
 
         private void btnHocsinh_Click(object sender, EventArgs e)
@@ -96,16 +72,44 @@ namespace QL_GV_HS_THPT_FORM
             }
         }
 
-        private void danhSáchGiáoViênToolStripMenuItem_Click(object sender, EventArgs e)
+        private void btnGiaovien_Click(object sender, EventArgs e)
+        {
+            frmGiaovien frm = new frmGiaovien();
+            frm.Show();
+            this.Dispose();
+        }
+
+        private void btnAddteacher_Click(object sender, EventArgs e)
+        {
+            frmThemGV themgv = new frmThemGV();
+            themgv.Show();
+        }
+
+        private void btnListteacher_Click(object sender, EventArgs e)
         {
             frmGiaovien gv = new frmGiaovien();
             gv.Show();
         }
 
-        private void thêmGiáoViênToolStripMenuItem1_Click(object sender, EventArgs e)
+        private void btnRegisterteach_Click(object sender, EventArgs e)
         {
-            frmThemGV themgv = new frmThemGV();
-            themgv.Show();
+            frmQLGD frm = new frmQLGD();
+            frm.Show();
+            this.Hide();
+        }
+
+        private void btnSearchtecher_Click(object sender, EventArgs e)
+        {
+            frmTimGV frmGV = new frmTimGV();
+            this.Hide();
+            frmGV.Show();
+        }
+
+        private void btnSearchstudent_Click(object sender, EventArgs e)
+        {
+            frmHocsinh frmHS = new frmHocsinh("TimKiem");
+            frmHS.Show();
+            this.Dispose();
         }
     }
 }
