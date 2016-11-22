@@ -48,12 +48,6 @@
     <Compile Include="frmDangnhap.Designer.cs">
       <DependentUpon>frmDangnhap.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmDKgiangday.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmDKgiangday.Designer.cs">
-      <DependentUpon>frmDKgiangday.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmGiaovien.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,29 +84,11 @@
     <Compile Include="frmQuantri.Designer.cs">
       <DependentUpon>frmQuantri.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmSuaGV.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmSuaGV.Designer.cs">
-      <DependentUpon>frmSuaGV.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmSuaHS.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmSuaHS.Designer.cs">
-      <DependentUpon>frmSuaHS.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmThemGV.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmThemGV.Designer.cs">
       <DependentUpon>frmThemGV.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmThemHS.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmThemHS.Designer.cs">
-      <DependentUpon>frmThemHS.cs</DependentUpon>
     </Compile>
     <Compile Include="frmThemtaikhoan.cs">
       <SubType>Form</SubType>
@@ -126,29 +102,11 @@
     <Compile Include="frmTimGV.Designer.cs">
       <DependentUpon>frmTimGV.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmTimHS.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmTimHS.Designer.cs">
-      <DependentUpon>frmTimHS.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmTKB.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmTKB.Designer.cs">
       <DependentUpon>frmTKB.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmXoaGV.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmXoaGV.Designer.cs">
-      <DependentUpon>frmXoaGV.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmXoaHS.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmXoaHS.Designer.cs">
-      <DependentUpon>frmXoaHS.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
@@ -166,9 +124,9 @@
       <Project>{705ba706-e999-4140-b0f6-8bbaa6e940ac}</Project>
       <Name>QL_GV_HS_THPT_DAL</Name>
     </ProjectReference>
-    <ProjectReference Include="..\QL_QV_HS_THPT_Entity\QL_QV_HS_THPT_Entity.csproj">
+    <ProjectReference Include="..\QL_QV_HS_THPT_Entity\QL_GV_HS_THPT_Entity.csproj">
       <Project>{bc18fdfe-012e-454c-a235-2965acff0819}</Project>
-      <Name>QL_QV_HS_THPT_Entity</Name>
+      <Name>QL_GV_HS_THPT_Entity</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
@@ -198,6 +156,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmTimGV.resx">
       <DependentUpon>frmTimGV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTKB.resx">
+      <DependentUpon>frmTKB.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

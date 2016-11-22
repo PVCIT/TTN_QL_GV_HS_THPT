@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{705BA706-E999-4140-B0F6-8BBAA6E940AC}</ProjectGuid>
+    <ProjectGuid>{BC18FDFE-012E-454C-A235-2965ACFF0819}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>QL_GV_HS_THPT_DAL</RootNamespace>
-    <AssemblyName>QL_GV_HS_THPT_DAL</AssemblyName>
+    <RootNamespace>QL_QV_HS_THPT_Entity</RootNamespace>
+    <AssemblyName>QL_QV_HS_THPT_Entity</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -31,7 +31,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -40,21 +39,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="SQL_tblGiangday.cs" />
-    <Compile Include="SQL_tblGiaovien.cs" />
-    <Compile Include="SQL_tblHocsinh.cs" />
-    <Compile Include="SQL_tblLop.cs" />
-    <Compile Include="SQL_tblMonhoc.cs" />
-    <Compile Include="SQL_tblPhanquyen.cs" />
-    <Compile Include="SQL_tblUser.cs" />
-    <Compile Include="KetNoiDB.cs" />
+    <Compile Include="EC_tblGiangday.cs" />
+    <Compile Include="EC_tblGiaovien.cs" />
+    <Compile Include="EC_tblHocsinh.cs" />
+    <Compile Include="EC_tblLop.cs" />
+    <Compile Include="EC_tblMonhoc.cs" />
+    <Compile Include="EC_tblPhanquyen.cs" />
+    <Compile Include="EC_tblUser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\QL_QV_HS_THPT_Entity\QL_GV_HS_THPT_Entity.csproj">
-      <Project>{bc18fdfe-012e-454c-a235-2965acff0819}</Project>
-      <Name>QL_GV_HS_THPT_Entity</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -29,12 +29,12 @@ namespace QL_QV_HS_THPT_Entity
             get { return _MaGV; }
             set { _MaGV = value; }
         }
-        private string _Ngayday;
+        private string _Thu;
 
-        public string Ngayday
+        public string Thu
         {
-            get { return _Ngayday; }
-            set { _Ngayday = value; }
+            get { return _Thu; }
+            set { _Thu = value; }
         }
         private string _Tietday;
 

@@ -41,7 +41,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.cboLop = new System.Windows.Forms.ComboBox();
-            this.dtpNgay = new System.Windows.Forms.DateTimePicker();
             this.cboGiaoVien = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtTiet = new System.Windows.Forms.TextBox();
@@ -50,9 +49,10 @@
             this.btnThem = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.dgvDanhSach = new System.Windows.Forms.DataGridView();
+            this.cmbThu = new System.Windows.Forms.ComboBox();
             this.TenGV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Lop = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Ngay = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Thu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Tiet = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
@@ -75,6 +75,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(573, 193);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // toolStrip1
             // 
@@ -144,10 +145,10 @@
             // groupBox1
             // 
             this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.groupBox1.Controls.Add(this.cmbThu);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.cboLop);
-            this.groupBox1.Controls.Add(this.dtpNgay);
             this.groupBox1.Controls.Add(this.cboGiaoVien);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.txtTiet);
@@ -188,14 +189,6 @@
             this.cboLop.Size = new System.Drawing.Size(97, 23);
             this.cboLop.TabIndex = 1;
             this.cboLop.Validated += new System.EventHandler(this.cboLop_Validated);
-            // 
-            // dtpNgay
-            // 
-            this.dtpNgay.Enabled = false;
-            this.dtpNgay.Location = new System.Drawing.Point(83, 81);
-            this.dtpNgay.Name = "dtpNgay";
-            this.dtpNgay.Size = new System.Drawing.Size(130, 21);
-            this.dtpNgay.TabIndex = 2;
             // 
             // cboGiaoVien
             // 
@@ -284,7 +277,7 @@
             this.dgvDanhSach.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.TenGV,
             this.Lop,
-            this.Ngay,
+            this.Thu,
             this.Tiet});
             this.dgvDanhSach.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvDanhSach.Location = new System.Drawing.Point(0, 0);
@@ -292,6 +285,21 @@
             this.dgvDanhSach.Size = new System.Drawing.Size(573, 167);
             this.dgvDanhSach.TabIndex = 0;
             this.dgvDanhSach.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDanhSach_CellEnter);
+            // 
+            // cmbThu
+            // 
+            this.cmbThu.FormattingEnabled = true;
+            this.cmbThu.Items.AddRange(new object[] {
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"});
+            this.cmbThu.Location = new System.Drawing.Point(83, 80);
+            this.cmbThu.Name = "cmbThu";
+            this.cmbThu.Size = new System.Drawing.Size(97, 23);
+            this.cmbThu.TabIndex = 13;
             // 
             // TenGV
             // 
@@ -307,12 +315,12 @@
             this.Lop.Name = "Lop";
             this.Lop.Width = 80;
             // 
-            // Ngay
+            // Thu
             // 
-            this.Ngay.DataPropertyName = "Ngayday";
-            this.Ngay.HeaderText = "Ngày";
-            this.Ngay.Name = "Ngay";
-            this.Ngay.Width = 150;
+            this.Thu.DataPropertyName = "Thu";
+            this.Thu.HeaderText = "Thứ";
+            this.Thu.Name = "Thu";
+            this.Thu.Width = 150;
             // 
             // Tiet
             // 
@@ -355,7 +363,6 @@
         private System.Windows.Forms.DataGridView dgvDanhSach;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.DateTimePicker dtpNgay;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox cboLop;
         private System.Windows.Forms.ComboBox cboGiaoVien;
@@ -364,13 +371,14 @@
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.Button btnLuu;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TenGV;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Lop;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Ngay;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Tiet;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripLabel toolStripLabel1;
         private System.Windows.Forms.ToolStripTextBox txtTimGV;
         private System.Windows.Forms.ToolStripTextBox txtTimLop;
+        private System.Windows.Forms.ComboBox cmbThu;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TenGV;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Lop;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Thu;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Tiet;
     }
 }

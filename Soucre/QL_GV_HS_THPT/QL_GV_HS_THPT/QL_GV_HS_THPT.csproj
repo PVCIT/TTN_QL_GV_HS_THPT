@@ -85,9 +85,9 @@
       <Project>{650c3905-253b-4d13-8a14-da5825367460}</Project>
       <Name>QL_GV_HS_THPT_FORM</Name>
     </ProjectReference>
-    <ProjectReference Include="..\QL_QV_HS_THPT_Entity\QL_QV_HS_THPT_Entity.csproj">
+    <ProjectReference Include="..\QL_QV_HS_THPT_Entity\QL_GV_HS_THPT_Entity.csproj">
       <Project>{bc18fdfe-012e-454c-a235-2965acff0819}</Project>
-      <Name>QL_QV_HS_THPT_Entity</Name>
+      <Name>QL_GV_HS_THPT_Entity</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -43,8 +43,8 @@ namespace QL_GV_HS_THPT_DAL
         public DataTable getUserinfo(string dk)
         {
             return cn.getDatatable(@"Select u.Username, u.Password, u.MaGV, u.TenQuyen, g.Ho, g.Ten 
-from (select Username,Password,TenQuyen,MaGV from tblUser, tblPhanquyen where tblUser.Quyen = tblPhanquyen.Quyen) u right join tblGiaovien g 
-on u.MaGV = g.MaGV  " + dk);
+                                    from (select Username,Password,MaGV,TenQuyen from tblUser,tblPhanquyen where tblUser.Quyen = tblPhanquyen.Quyen) u left join tblGiaovien g 
+                                    on u.MaGV = g.MaGV " + dk);
         }
 
         public string checkUser(string Username)

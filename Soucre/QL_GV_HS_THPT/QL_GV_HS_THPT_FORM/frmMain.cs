@@ -28,6 +28,8 @@ namespace QL_GV_HS_THPT_FORM
         private void frmMain_Load(object sender, EventArgs e)
         {
             lblHi.Text += ConfigurationManager.AppSettings.Get("Username");
+            int rule = int.Parse(ConfigurationManager.AppSettings.Get("Quyen"));
+            checkRule(rule);
         }
 
         private void frmMain_FormClosed_1(object sender, FormClosedEventArgs e)
@@ -37,8 +39,8 @@ namespace QL_GV_HS_THPT_FORM
 
         private void btnTkb_Click(object sender, EventArgs e)
         {
-            frmQLGD frmQlgd = new frmQLGD();
-            frmQlgd.Show();
+            frmTKB frm = new frmTKB();
+            frm.Show();
             this.Dispose();
             
         }
@@ -62,13 +64,39 @@ namespace QL_GV_HS_THPT_FORM
             frmDangnhap frm = new frmDangnhap();
             frm.Show();
             this.Dispose();
+            
         }
         
         private void checkRule(int rule)
         {
-            if(rule==0)
+            foreach(Control ctr in this.Controls)
+                {
+                    ctr.Enabled = false;
+                }
+            if(rule>=0)
             {
-                
+                btnLogout.Enabled = true;
+                btnHocsinh.Enabled = true;
+                btnListstudent.Enabled = true;
+                btnSearchstudent.Enabled = true;
+                btnHuongdan.Enabled = true;
+            }
+            if(rule>=1)
+            {
+                btnGiaovien.Enabled = true;
+                btnListteacher.Enabled = true;
+                btnSearchtecher.Enabled = true;
+            }
+            if(rule>=2)
+            {
+                btnTkb.Enabled = true;
+            }
+            if (rule >= 4)
+            {
+                foreach (Control ctr in this.Controls)
+                {
+                    ctr.Enabled = true;
+                }
             }
         }
 

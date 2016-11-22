@@ -37,9 +37,9 @@
             this.btnHocsinh = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.quảnLýHọcSinhToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.xemDanhSáchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnListstudent = new System.Windows.Forms.ToolStripMenuItem();
             this.btnSearchstudent = new System.Windows.Forms.ToolStripMenuItem();
-            this.thêmHọcSinhToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnAddstudent = new System.Windows.Forms.ToolStripMenuItem();
             this.quảnLýGiáoViênToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnListteacher = new System.Windows.Forms.ToolStripMenuItem();
             this.btnSearchtecher = new System.Windows.Forms.ToolStripMenuItem();
@@ -102,7 +102,7 @@
             this.btnTkb.Name = "btnTkb";
             this.btnTkb.Size = new System.Drawing.Size(109, 87);
             this.btnTkb.TabIndex = 3;
-            this.btnTkb.Text = "Quản lý giảng dạy";
+            this.btnTkb.Text = "Thời khóa biểu";
             this.btnTkb.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnTkb.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnTkb.UseVisualStyleBackColor = true;
@@ -154,19 +154,19 @@
             // quảnLýHọcSinhToolStripMenuItem
             // 
             this.quảnLýHọcSinhToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.xemDanhSáchToolStripMenuItem,
+            this.btnListstudent,
             this.btnSearchstudent,
-            this.thêmHọcSinhToolStripMenuItem});
+            this.btnAddstudent});
             this.quảnLýHọcSinhToolStripMenuItem.Name = "quảnLýHọcSinhToolStripMenuItem";
             this.quảnLýHọcSinhToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
             this.quảnLýHọcSinhToolStripMenuItem.Text = "Học sinh";
             // 
-            // xemDanhSáchToolStripMenuItem
+            // btnListstudent
             // 
-            this.xemDanhSáchToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("xemDanhSáchToolStripMenuItem.Image")));
-            this.xemDanhSáchToolStripMenuItem.Name = "xemDanhSáchToolStripMenuItem";
-            this.xemDanhSáchToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
-            this.xemDanhSáchToolStripMenuItem.Text = "Xem danh sách";
+            this.btnListstudent.Image = ((System.Drawing.Image)(resources.GetObject("btnListstudent.Image")));
+            this.btnListstudent.Name = "btnListstudent";
+            this.btnListstudent.Size = new System.Drawing.Size(172, 22);
+            this.btnListstudent.Text = "Xem danh sách";
             // 
             // btnSearchstudent
             // 
@@ -175,12 +175,12 @@
             this.btnSearchstudent.Text = "Tìm kiếm học sinh";
             this.btnSearchstudent.Click += new System.EventHandler(this.btnSearchstudent_Click);
             // 
-            // thêmHọcSinhToolStripMenuItem
+            // btnAddstudent
             // 
-            this.thêmHọcSinhToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("thêmHọcSinhToolStripMenuItem.Image")));
-            this.thêmHọcSinhToolStripMenuItem.Name = "thêmHọcSinhToolStripMenuItem";
-            this.thêmHọcSinhToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
-            this.thêmHọcSinhToolStripMenuItem.Text = "Thêm học sinh";
+            this.btnAddstudent.Image = ((System.Drawing.Image)(resources.GetObject("btnAddstudent.Image")));
+            this.btnAddstudent.Name = "btnAddstudent";
+            this.btnAddstudent.Size = new System.Drawing.Size(172, 22);
+            this.btnAddstudent.Text = "Thêm học sinh";
             // 
             // quảnLýGiáoViênToolStripMenuItem
             // 
@@ -299,9 +299,9 @@
         private System.Windows.Forms.ToolStripMenuItem btnRegisterteach;
         private System.Windows.Forms.ToolStripMenuItem tàiKhoảnToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem hướngDẫnToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem xemDanhSáchToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem btnListstudent;
         private System.Windows.Forms.ToolStripMenuItem btnSearchstudent;
-        private System.Windows.Forms.ToolStripMenuItem thêmHọcSinhToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem btnAddstudent;
         private System.Windows.Forms.ToolStripMenuItem btnListteacher;
         private System.Windows.Forms.ToolStripMenuItem btnSearchtecher;
         private System.Windows.Forms.ToolStripMenuItem btnAddteacher;

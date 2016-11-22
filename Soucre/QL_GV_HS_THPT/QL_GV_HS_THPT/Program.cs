@@ -18,6 +18,7 @@ namespace QL_GV_HS_THPT
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new frmDangnhap());
+            //Application.Run(new frmTKB());
         }
     }
 }

@@ -1105,7 +1105,7 @@
   <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <data name="xemDanhSáchToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnListstudent.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAABSlJREFUSEul
         kntMU2cYxj8XL5uZbuIlk7EsiwGhQAUptkBbC9RaW8XSIheZdxdxcyYuu2T7Q5coiQ6LorRUCoyenlLb
@@ -1133,7 +1133,7 @@
         JiAAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="thêmHọcSinhToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnAddstudent.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAACBFJREFUWEet
         lgdUFOcWxz/BghCfUsRykEfRRED60sRFliZSXVhgAQUPSk5UPImSGANqYhSNlSplQUDpS0eKC4SOESmK

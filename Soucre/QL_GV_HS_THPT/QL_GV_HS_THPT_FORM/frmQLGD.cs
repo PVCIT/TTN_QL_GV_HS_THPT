@@ -52,7 +52,7 @@ namespace QL_GV_HS_THPT_FORM
             if (e.RowIndex >= 0 && e.RowIndex < dgvDanhSach.Rows.Count - 1)
             {
                 txtTiet.Text = dgvDanhSach.Rows[e.RowIndex].Cells["Tiet"].Value.ToString();
-                dtpNgay.Text = dgvDanhSach.Rows[e.RowIndex].Cells["Ngay"].Value.ToString();
+                cmbThu.Text = dgvDanhSach.Rows[e.RowIndex].Cells["Thu"].Value.ToString();
                 cboGiaoVien.Text = dgvDanhSach.Rows[e.RowIndex].Cells["TenGV"].Value.ToString();
                 cboLop.Text = dgvDanhSach.Rows[e.RowIndex].Cells["Lop"].Value.ToString();
             }
@@ -89,7 +89,7 @@ namespace QL_GV_HS_THPT_FORM
                 cboLop.Focus();
                 return;
             }
-            EC_Giang.Ngayday = dtpNgay.Text;
+            EC_Giang.Thu = cmbThu.Text;
             EC_Giang.Tietday = txtTiet.Text;
 
             if (_them)
@@ -149,7 +149,7 @@ namespace QL_GV_HS_THPT_FORM
             txtTiet.Enabled = true;
             cboLop.Enabled = true;
             cboGiaoVien.Enabled = true;
-            dtpNgay.Enabled = true;
+            cmbThu.Enabled = true;
             btnLuu.Enabled = true;
             dgvDanhSach.Enabled = false;
         }
@@ -159,7 +159,7 @@ namespace QL_GV_HS_THPT_FORM
             txtTiet.Enabled = false;
             cboLop.Enabled = false;
             cboGiaoVien.Enabled = false;
-            dtpNgay.Enabled = false;
+            cmbThu.Enabled = false;
             btnLuu.Enabled = false;
             dgvDanhSach.Enabled = true;
         }
@@ -169,13 +169,13 @@ namespace QL_GV_HS_THPT_FORM
             cboGiaoVien.ResetText();
             cboLop.ResetText();
             txtTiet.ResetText();
-            dtpNgay.ResetText();
+            cmbThu.ResetText();
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
             EC_Giang.Tietday = txtTiet.Text;
-            EC_Giang.Ngayday = dtpNgay.Text;
+            EC_Giang.Thu = cmbThu.Text;
             EC_Giang.MaLop = cboLop.SelectedValue.ToString();
             EC_Giang.MaGV = cboGiaoVien.SelectedValue.ToString();
             DAL_Giang.delGiangday(EC_Giang);
@@ -204,6 +204,11 @@ namespace QL_GV_HS_THPT_FORM
             frm.Show();
             this.Dispose();
             
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
 
     }
