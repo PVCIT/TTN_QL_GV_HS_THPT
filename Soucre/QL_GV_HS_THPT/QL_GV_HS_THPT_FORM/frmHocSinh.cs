@@ -203,6 +203,7 @@ namespace QL_GV_HS_THPT_FORM
         {
             DataTable tbl = busHS.getAllHocsinh();
             dgvHocSinh.DataSource = tbl;
+
         }
 
         private void txtTimMaHS_TextChanged(object sender, EventArgs e)
@@ -387,6 +388,7 @@ namespace QL_GV_HS_THPT_FORM
             MoDieuKhien();
             SetNull();
             TuDanhMaHS();
+            DoDLMaLop();
             themmoi = true;
         }
 

@@ -66,3 +66,5 @@ D:\HOC TAP\ky1_nam4\ki1_nam4\thuc_tap_nhom\de_tai\TTN_QL_GV_HS_THPT\Soucre\QL_GV
 D:\HOC TAP\ky1_nam4\ki1_nam4\thuc_tap_nhom\de_tai\TTN_QL_GV_HS_THPT\Soucre\QL_GV_HS_THPT\QL_GV_HS_THPT_FORM\obj\Debug\QL_GV_HS_THPT_FORM.csproj.GenerateResource.Cache
 D:\HOC TAP\ky1_nam4\ki1_nam4\thuc_tap_nhom\de_tai\TTN_QL_GV_HS_THPT\Soucre\QL_GV_HS_THPT\QL_GV_HS_THPT_FORM\obj\Debug\QL_GV_HS_THPT_FORM.dll
 D:\HOC TAP\ky1_nam4\ki1_nam4\thuc_tap_nhom\de_tai\TTN_QL_GV_HS_THPT\Soucre\QL_GV_HS_THPT\QL_GV_HS_THPT_FORM\obj\Debug\QL_GV_HS_THPT_FORM.pdb
+E:\GitHub\TTN_QL_GV_HS_THPT\Soucre\QL_GV_HS_THPT\QL_GV_HS_THPT_FORM\obj\Debug\QL_GV_HS_THPT_FORM.frmTKB.resources
+E:\GitHub\TTN_QL_GV_HS_THPT\Soucre\QL_GV_HS_THPT\QL_GV_HS_THPT_FORM\obj\Debug\QL_GV_HS_THPT_FORM.frmHuongdan.resources

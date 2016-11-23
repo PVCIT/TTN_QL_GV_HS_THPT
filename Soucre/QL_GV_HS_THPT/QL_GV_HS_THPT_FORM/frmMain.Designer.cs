@@ -91,6 +91,7 @@
             this.btnHuongdan.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnHuongdan.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnHuongdan.UseVisualStyleBackColor = true;
+            this.btnHuongdan.Click += new System.EventHandler(this.btnHuongdan_Click);
             // 
             // btnTkb
             // 
