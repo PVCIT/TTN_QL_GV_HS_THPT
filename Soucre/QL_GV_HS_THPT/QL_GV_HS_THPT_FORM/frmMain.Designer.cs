@@ -36,22 +36,19 @@
             this.btnGiaovien = new System.Windows.Forms.Button();
             this.btnHocsinh = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.quảnLýHọcSinhToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnStudent = new System.Windows.Forms.ToolStripMenuItem();
             this.btnListstudent = new System.Windows.Forms.ToolStripMenuItem();
             this.btnSearchstudent = new System.Windows.Forms.ToolStripMenuItem();
             this.btnAddstudent = new System.Windows.Forms.ToolStripMenuItem();
-            this.quảnLýGiáoViênToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnTeacher = new System.Windows.Forms.ToolStripMenuItem();
             this.btnListteacher = new System.Windows.Forms.ToolStripMenuItem();
             this.btnSearchtecher = new System.Windows.Forms.ToolStripMenuItem();
             this.btnAddteacher = new System.Windows.Forms.ToolStripMenuItem();
             this.btnRegisterteach = new System.Windows.Forms.ToolStripMenuItem();
-            this.tàiKhoảnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnAccount = new System.Windows.Forms.ToolStripMenuItem();
             this.btnLogout = new System.Windows.Forms.ToolStripMenuItem();
             this.btnAcc = new System.Windows.Forms.ToolStripMenuItem();
-            this.thayMậtKhẩuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tạoTàiKhoảnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.phânQuyềnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.hướngDẫnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnF1 = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -140,26 +137,26 @@
             // 
             this.menuStrip1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.quảnLýHọcSinhToolStripMenuItem,
-            this.quảnLýGiáoViênToolStripMenuItem,
+            this.btnStudent,
+            this.btnTeacher,
             this.btnRegisterteach,
-            this.tàiKhoảnToolStripMenuItem,
-            this.hướngDẫnToolStripMenuItem});
+            this.btnAccount,
+            this.btnF1});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(645, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // quảnLýHọcSinhToolStripMenuItem
+            // btnStudent
             // 
-            this.quảnLýHọcSinhToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.btnStudent.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnListstudent,
             this.btnSearchstudent,
             this.btnAddstudent});
-            this.quảnLýHọcSinhToolStripMenuItem.Name = "quảnLýHọcSinhToolStripMenuItem";
-            this.quảnLýHọcSinhToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
-            this.quảnLýHọcSinhToolStripMenuItem.Text = "Học sinh";
+            this.btnStudent.Name = "btnStudent";
+            this.btnStudent.Size = new System.Drawing.Size(66, 20);
+            this.btnStudent.Text = "Học sinh";
             // 
             // btnListstudent
             // 
@@ -167,6 +164,7 @@
             this.btnListstudent.Name = "btnListstudent";
             this.btnListstudent.Size = new System.Drawing.Size(172, 22);
             this.btnListstudent.Text = "Xem danh sách";
+            this.btnListstudent.Click += new System.EventHandler(this.btnListstudent_Click);
             // 
             // btnSearchstudent
             // 
@@ -182,15 +180,15 @@
             this.btnAddstudent.Size = new System.Drawing.Size(172, 22);
             this.btnAddstudent.Text = "Thêm học sinh";
             // 
-            // quảnLýGiáoViênToolStripMenuItem
+            // btnTeacher
             // 
-            this.quảnLýGiáoViênToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.btnTeacher.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnListteacher,
             this.btnSearchtecher,
             this.btnAddteacher});
-            this.quảnLýGiáoViênToolStripMenuItem.Name = "quảnLýGiáoViênToolStripMenuItem";
-            this.quảnLýGiáoViênToolStripMenuItem.Size = new System.Drawing.Size(68, 20);
-            this.quảnLýGiáoViênToolStripMenuItem.Text = "Giáo viên";
+            this.btnTeacher.Name = "btnTeacher";
+            this.btnTeacher.Size = new System.Drawing.Size(68, 20);
+            this.btnTeacher.Text = "Giáo viên";
             // 
             // btnListteacher
             // 
@@ -221,55 +219,34 @@
             this.btnRegisterteach.Text = "Đăng ký giảng dạy";
             this.btnRegisterteach.Click += new System.EventHandler(this.btnRegisterteach_Click);
             // 
-            // tàiKhoảnToolStripMenuItem
+            // btnAccount
             // 
-            this.tàiKhoảnToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.btnAccount.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnLogout,
-            this.btnAcc,
-            this.thayMậtKhẩuToolStripMenuItem,
-            this.tạoTàiKhoảnToolStripMenuItem,
-            this.phânQuyềnToolStripMenuItem});
-            this.tàiKhoảnToolStripMenuItem.Name = "tàiKhoảnToolStripMenuItem";
-            this.tàiKhoảnToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
-            this.tàiKhoảnToolStripMenuItem.Text = "Tài khoản";
+            this.btnAcc});
+            this.btnAccount.Name = "btnAccount";
+            this.btnAccount.Size = new System.Drawing.Size(71, 20);
+            this.btnAccount.Text = "Tài khoản";
             // 
             // btnLogout
             // 
             this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(153, 22);
+            this.btnLogout.Size = new System.Drawing.Size(167, 22);
             this.btnLogout.Text = "Đăng xuát";
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // btnAcc
             // 
             this.btnAcc.Name = "btnAcc";
-            this.btnAcc.Size = new System.Drawing.Size(153, 22);
-            this.btnAcc.Text = "Quản lý ";
+            this.btnAcc.Size = new System.Drawing.Size(167, 22);
+            this.btnAcc.Text = "Quản lý tài khoản";
             this.btnAcc.Click += new System.EventHandler(this.btnAcc_Click);
             // 
-            // thayMậtKhẩuToolStripMenuItem
+            // btnF1
             // 
-            this.thayMậtKhẩuToolStripMenuItem.Name = "thayMậtKhẩuToolStripMenuItem";
-            this.thayMậtKhẩuToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
-            this.thayMậtKhẩuToolStripMenuItem.Text = "Thay mật khẩu";
-            // 
-            // tạoTàiKhoảnToolStripMenuItem
-            // 
-            this.tạoTàiKhoảnToolStripMenuItem.Name = "tạoTàiKhoảnToolStripMenuItem";
-            this.tạoTàiKhoảnToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
-            this.tạoTàiKhoảnToolStripMenuItem.Text = "Tạo tài khoản";
-            // 
-            // phânQuyềnToolStripMenuItem
-            // 
-            this.phânQuyềnToolStripMenuItem.Name = "phânQuyềnToolStripMenuItem";
-            this.phânQuyềnToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
-            this.phânQuyềnToolStripMenuItem.Text = "Phân quyền";
-            // 
-            // hướngDẫnToolStripMenuItem
-            // 
-            this.hướngDẫnToolStripMenuItem.Name = "hướngDẫnToolStripMenuItem";
-            this.hướngDẫnToolStripMenuItem.Size = new System.Drawing.Size(79, 20);
-            this.hướngDẫnToolStripMenuItem.Text = "Hướng dẫn";
+            this.btnF1.Name = "btnF1";
+            this.btnF1.Size = new System.Drawing.Size(79, 20);
+            this.btnF1.Text = "Hướng dẫn";
             // 
             // frmMain
             // 
@@ -279,7 +256,7 @@
             this.Controls.Add(this.panel1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmMain";
-            this.Text = "frmMain";
+            this.Text = "Quản lý trường THPT";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmMain_FormClosed_1);
             this.Load += new System.EventHandler(this.frmMain_Load);
             this.panel1.ResumeLayout(false);
@@ -294,11 +271,11 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem quảnLýHọcSinhToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem quảnLýGiáoViênToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem btnStudent;
+        private System.Windows.Forms.ToolStripMenuItem btnTeacher;
         private System.Windows.Forms.ToolStripMenuItem btnRegisterteach;
-        private System.Windows.Forms.ToolStripMenuItem tàiKhoảnToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem hướngDẫnToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem btnAccount;
+        private System.Windows.Forms.ToolStripMenuItem btnF1;
         private System.Windows.Forms.ToolStripMenuItem btnListstudent;
         private System.Windows.Forms.ToolStripMenuItem btnSearchstudent;
         private System.Windows.Forms.ToolStripMenuItem btnAddstudent;
@@ -306,13 +283,10 @@
         private System.Windows.Forms.ToolStripMenuItem btnSearchtecher;
         private System.Windows.Forms.ToolStripMenuItem btnAddteacher;
         private System.Windows.Forms.ToolStripMenuItem btnLogout;
-        private System.Windows.Forms.ToolStripMenuItem thayMậtKhẩuToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem tạoTàiKhoảnToolStripMenuItem;
         private System.Windows.Forms.Button btnHuongdan;
         private System.Windows.Forms.Button btnTkb;
         private System.Windows.Forms.Button btnGiaovien;
         private System.Windows.Forms.Button btnHocsinh;
-        private System.Windows.Forms.ToolStripMenuItem phânQuyềnToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem btnAcc;
         private System.Windows.Forms.Label lblHi;
     }

@@ -172,6 +172,7 @@
             this.Controls.Add(this.lblPassword);
             this.Name = "frmDangnhap";
             this.Text = "Đăng nhập";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmDangnhap_FormClosing);
             this.Load += new System.EventHandler(this.frmDangnhap_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

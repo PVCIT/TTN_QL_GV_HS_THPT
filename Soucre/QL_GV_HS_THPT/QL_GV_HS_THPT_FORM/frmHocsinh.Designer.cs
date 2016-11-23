@@ -623,7 +623,7 @@
             this.Controls.Add(this.grbThongTinHocSinh);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmHocsinh";
-            this.Text = "frmHocSinh";
+            this.Text = "Học sinh";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmHocsinh_FormClosed);
             this.Load += new System.EventHandler(this.frmHocsinh_Load);
             this.menuStrip1.ResumeLayout(false);

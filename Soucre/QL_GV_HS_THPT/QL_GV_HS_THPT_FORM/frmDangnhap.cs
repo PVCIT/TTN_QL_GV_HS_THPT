@@ -106,5 +106,10 @@ namespace QL_GV_HS_THPT_FORM
         {
             
         }
+
+        private void frmDangnhap_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

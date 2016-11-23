@@ -30,6 +30,7 @@
         {
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.grbTKB = new System.Windows.Forms.GroupBox();
+            this.btnAdd = new System.Windows.Forms.Button();
             this.lblClass = new System.Windows.Forms.Label();
             this.cmbClass = new System.Windows.Forms.ComboBox();
             this.dgvTKB = new System.Windows.Forms.DataGridView();
@@ -52,7 +53,6 @@
             this.Thu7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenGV7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MaGV7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnAdd = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -91,6 +91,16 @@
             this.grbTKB.TabIndex = 0;
             this.grbTKB.TabStop = false;
             this.grbTKB.Text = "Thông tin giảng dạy";
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.Location = new System.Drawing.Point(326, 21);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(75, 23);
+            this.btnAdd.TabIndex = 2;
+            this.btnAdd.Text = "Thêm";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // lblClass
             // 
@@ -250,16 +260,6 @@
             this.MaGV7.Name = "MaGV7";
             this.MaGV7.Visible = false;
             // 
-            // btnAdd
-            // 
-            this.btnAdd.Location = new System.Drawing.Point(326, 21);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(75, 23);
-            this.btnAdd.TabIndex = 2;
-            this.btnAdd.Text = "Thêm";
-            this.btnAdd.UseVisualStyleBackColor = true;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
-            // 
             // frmTKB
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -267,7 +267,7 @@
             this.ClientSize = new System.Drawing.Size(1103, 225);
             this.Controls.Add(this.splitContainer1);
             this.Name = "frmTKB";
-            this.Text = "frmTKB";
+            this.Text = "Thời khóa biểu";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmTKB_FormClosing);
             this.Load += new System.EventHandler(this.frmTKB_Load);
             this.splitContainer1.Panel1.ResumeLayout(false);

@@ -211,5 +211,10 @@ namespace QL_GV_HS_THPT_FORM
 
         }
 
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

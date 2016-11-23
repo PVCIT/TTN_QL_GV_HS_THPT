@@ -69,10 +69,11 @@ namespace QL_GV_HS_THPT_FORM
         
         private void checkRule(int rule)
         {
-            foreach(Control ctr in this.Controls)
+            foreach(Control ctr in panel1.Controls)
                 {
                     ctr.Enabled = false;
                 }
+            menuStrip1.Enabled = true;
             if(rule>=0)
             {
                 btnLogout.Enabled = true;
@@ -80,16 +81,28 @@ namespace QL_GV_HS_THPT_FORM
                 btnListstudent.Enabled = true;
                 btnSearchstudent.Enabled = true;
                 btnHuongdan.Enabled = true;
+                btnStudent.Enabled = true;
+                btnTkb.Enabled = true;
+
+                btnRegisterteach.Enabled = false;
+                btnTeacher.Enabled = false;
+                btnAddstudent.Enabled = false;
+                btnAcc.Enabled = false;
             }
             if(rule>=1)
             {
                 btnGiaovien.Enabled = true;
                 btnListteacher.Enabled = true;
                 btnSearchtecher.Enabled = true;
+                btnAddstudent.Enabled = true;
+                btnTeacher.Enabled = true;
+                btnAcc.Enabled = true;
             }
             if(rule>=2)
             {
                 btnTkb.Enabled = true;
+                btnRegisterteach.Enabled = true;
+                
             }
             if (rule >= 4)
             {
@@ -136,6 +149,13 @@ namespace QL_GV_HS_THPT_FORM
         private void btnSearchstudent_Click(object sender, EventArgs e)
         {
             frmHocsinh frmHS = new frmHocsinh("TimKiem");
+            frmHS.Show();
+            this.Dispose();
+        }
+
+        private void btnListstudent_Click(object sender, EventArgs e)
+        {
+            frmHocsinh frmHS = new frmHocsinh();
             frmHS.Show();
             this.Dispose();
         }

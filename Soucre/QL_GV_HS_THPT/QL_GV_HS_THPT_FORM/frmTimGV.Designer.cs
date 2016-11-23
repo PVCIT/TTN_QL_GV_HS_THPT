@@ -285,7 +285,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "frmTimGV";
-            this.Text = "frmTimGV";
+            this.Text = "Tìm giáo viên";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmTimGV_FormClosed);
             this.Load += new System.EventHandler(this.frmTimGV_Load);
             this.panel1.ResumeLayout(false);

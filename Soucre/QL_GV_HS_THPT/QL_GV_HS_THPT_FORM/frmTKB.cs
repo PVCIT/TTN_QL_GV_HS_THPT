@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Configuration;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using QL_QV_HS_THPT_Entity;
@@ -38,6 +39,9 @@ namespace QL_GV_HS_THPT_FORM
             cmbClass.DataSource = tb;
             cmbClass.DisplayMember = "TenLop";
             cmbClass.ValueMember = "MaLop";
+            
+            int rule = int.Parse(ConfigurationManager.AppSettings.Get("Quyen"));
+            checkRule(rule);
             
         }
 
@@ -80,5 +84,11 @@ namespace QL_GV_HS_THPT_FORM
             frm.Show();
             this.Dispose();
         }
+        private void checkRule(int rule)
+        {
+            if (rule <= 2)
+                btnAdd.Enabled = false;
+        }
     }
+
 }
