@@ -39,5 +39,13 @@ namespace QL_GV_HS_THPT_BUS
         {
             return bus.getField(Field);
         }
+        public DataTable DoDLMaLop(string dk)
+        {
+            return bus.DoDLMaLop(dk);
+        }
+        public DataTable LayMaHS()
+        {
+            return bus.LayRaMaHS();
+        }
     }
 }

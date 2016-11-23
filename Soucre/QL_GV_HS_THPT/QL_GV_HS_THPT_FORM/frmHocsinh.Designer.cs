@@ -70,7 +70,7 @@
             this.cboMaLop = new System.Windows.Forms.ComboBox();
             this.txtDiaChi = new System.Windows.Forms.TextBox();
             this.dtpNgaySinh = new System.Windows.Forms.DateTimePicker();
-            this.rdbNữ = new System.Windows.Forms.RadioButton();
+            this.rdbNu = new System.Windows.Forms.RadioButton();
             this.rdbNam = new System.Windows.Forms.RadioButton();
             this.txtTen = new System.Windows.Forms.TextBox();
             this.txtHo = new System.Windows.Forms.TextBox();
@@ -366,7 +366,7 @@
             this.grbThongTinHocSinh.Controls.Add(this.cboMaLop);
             this.grbThongTinHocSinh.Controls.Add(this.txtDiaChi);
             this.grbThongTinHocSinh.Controls.Add(this.dtpNgaySinh);
-            this.grbThongTinHocSinh.Controls.Add(this.rdbNữ);
+            this.grbThongTinHocSinh.Controls.Add(this.rdbNu);
             this.grbThongTinHocSinh.Controls.Add(this.rdbNam);
             this.grbThongTinHocSinh.Controls.Add(this.txtTen);
             this.grbThongTinHocSinh.Controls.Add(this.txtHo);
@@ -485,16 +485,16 @@
             this.dtpNgaySinh.Size = new System.Drawing.Size(200, 20);
             this.dtpNgaySinh.TabIndex = 14;
             // 
-            // rdbNữ
+            // rdbNu
             // 
-            this.rdbNữ.AutoSize = true;
-            this.rdbNữ.Location = new System.Drawing.Point(128, 97);
-            this.rdbNữ.Name = "rdbNữ";
-            this.rdbNữ.Size = new System.Drawing.Size(39, 17);
-            this.rdbNữ.TabIndex = 13;
-            this.rdbNữ.TabStop = true;
-            this.rdbNữ.Text = "Nữ";
-            this.rdbNữ.UseVisualStyleBackColor = true;
+            this.rdbNu.AutoSize = true;
+            this.rdbNu.Location = new System.Drawing.Point(128, 97);
+            this.rdbNu.Name = "rdbNu";
+            this.rdbNu.Size = new System.Drawing.Size(39, 17);
+            this.rdbNu.TabIndex = 13;
+            this.rdbNu.TabStop = true;
+            this.rdbNu.Text = "Nữ";
+            this.rdbNu.UseVisualStyleBackColor = true;
             // 
             // rdbNam
             // 
@@ -671,7 +671,7 @@
         private System.Windows.Forms.ComboBox cboMaLop;
         private System.Windows.Forms.TextBox txtDiaChi;
         private System.Windows.Forms.DateTimePicker dtpNgaySinh;
-        private System.Windows.Forms.RadioButton rdbNữ;
+        private System.Windows.Forms.RadioButton rdbNu;
         private System.Windows.Forms.RadioButton rdbNam;
         private System.Windows.Forms.TextBox txtTen;
         private System.Windows.Forms.TextBox txtHo;
