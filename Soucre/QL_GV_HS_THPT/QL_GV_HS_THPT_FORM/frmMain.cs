@@ -166,5 +166,27 @@ namespace QL_GV_HS_THPT_FORM
             frm.Show();
             this.Dispose();
         }
+
+        private void frmMain_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.H)
+            {
+                frmHuongdan frm = new frmHuongdan();
+                frm.Show();
+                this.Dispose();
+            }
+        }
+
+        private void btnF1_Click(object sender, EventArgs e)
+        {
+            frmHuongdan frm = new frmHuongdan();
+            frm.Show();
+            this.Dispose();
+        }
+
+        private void frmMain_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+        }
     }
 }

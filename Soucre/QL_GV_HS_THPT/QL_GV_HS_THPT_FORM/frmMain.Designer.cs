@@ -246,8 +246,10 @@
             // btnF1
             // 
             this.btnF1.Name = "btnF1";
+            this.btnF1.ShortcutKeys = System.Windows.Forms.Keys.F1;
             this.btnF1.Size = new System.Drawing.Size(79, 20);
             this.btnF1.Text = "Hướng dẫn";
+            this.btnF1.Click += new System.EventHandler(this.btnF1_Click);
             // 
             // frmMain
             // 
@@ -260,6 +262,7 @@
             this.Text = "Quản lý trường THPT";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmMain_FormClosed_1);
             this.Load += new System.EventHandler(this.frmMain_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmMain_KeyDown);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
