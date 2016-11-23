@@ -43,3 +43,26 @@ E:\TTN_QL_GV_HS_THPT\Soucre\QL_GV_HS_THPT\QL_GV_HS_THPT_FORM\obj\Debug\QL_GV_HS_
 E:\TTN_QL_GV_HS_THPT\Soucre\QL_GV_HS_THPT\QL_GV_HS_THPT_FORM\obj\Debug\QL_GV_HS_THPT_FORM.dll
 E:\TTN_QL_GV_HS_THPT\Soucre\QL_GV_HS_THPT\QL_GV_HS_THPT_FORM\obj\Debug\QL_GV_HS_THPT_FORM.pdb
 E:\TTN_QL_GV_HS_THPT\Soucre\QL_GV_HS_THPT\QL_GV_HS_THPT_FORM\obj\Debug\QL_GV_HS_THPT_FORM.frmTKB.resources
+D:\HOC TAP\ky1_nam4\ki1_nam4\thuc_tap_nhom\de_tai\TTN_QL_GV_HS_THPT\Soucre\QL_GV_HS_THPT\QL_GV_HS_THPT_FORM\bin\Debug\QL_GV_HS_THPT_FORM.dll
+D:\HOC TAP\ky1_nam4\ki1_nam4\thuc_tap_nhom\de_tai\TTN_QL_GV_HS_THPT\Soucre\QL_GV_HS_THPT\QL_GV_HS_THPT_FORM\bin\Debug\QL_GV_HS_THPT_FORM.pdb
+D:\HOC TAP\ky1_nam4\ki1_nam4\thuc_tap_nhom\de_tai\TTN_QL_GV_HS_THPT\Soucre\QL_GV_HS_THPT\QL_GV_HS_THPT_FORM\bin\Debug\QL_GV_HS_THPT_BUS.dll
+D:\HOC TAP\ky1_nam4\ki1_nam4\thuc_tap_nhom\de_tai\TTN_QL_GV_HS_THPT\Soucre\QL_GV_HS_THPT\QL_GV_HS_THPT_FORM\bin\Debug\QL_GV_HS_THPT_DAL.dll
+D:\HOC TAP\ky1_nam4\ki1_nam4\thuc_tap_nhom\de_tai\TTN_QL_GV_HS_THPT\Soucre\QL_GV_HS_THPT\QL_GV_HS_THPT_FORM\bin\Debug\QL_QV_HS_THPT_Entity.dll
+D:\HOC TAP\ky1_nam4\ki1_nam4\thuc_tap_nhom\de_tai\TTN_QL_GV_HS_THPT\Soucre\QL_GV_HS_THPT\QL_GV_HS_THPT_FORM\bin\Debug\QL_GV_HS_THPT_BUS.pdb
+D:\HOC TAP\ky1_nam4\ki1_nam4\thuc_tap_nhom\de_tai\TTN_QL_GV_HS_THPT\Soucre\QL_GV_HS_THPT\QL_GV_HS_THPT_FORM\bin\Debug\QL_GV_HS_THPT_DAL.pdb
+D:\HOC TAP\ky1_nam4\ki1_nam4\thuc_tap_nhom\de_tai\TTN_QL_GV_HS_THPT\Soucre\QL_GV_HS_THPT\QL_GV_HS_THPT_FORM\bin\Debug\QL_QV_HS_THPT_Entity.pdb
+D:\HOC TAP\ky1_nam4\ki1_nam4\thuc_tap_nhom\de_tai\TTN_QL_GV_HS_THPT\Soucre\QL_GV_HS_THPT\QL_GV_HS_THPT_FORM\obj\Debug\QL_GV_HS_THPT_FORM.csprojResolveAssemblyReference.cache
+D:\HOC TAP\ky1_nam4\ki1_nam4\thuc_tap_nhom\de_tai\TTN_QL_GV_HS_THPT\Soucre\QL_GV_HS_THPT\QL_GV_HS_THPT_FORM\obj\Debug\QL_GV_HS_THPT_FORM.frmDangnhap.resources
+D:\HOC TAP\ky1_nam4\ki1_nam4\thuc_tap_nhom\de_tai\TTN_QL_GV_HS_THPT\Soucre\QL_GV_HS_THPT\QL_GV_HS_THPT_FORM\obj\Debug\QL_GV_HS_THPT_FORM.frmGiaovien.resources
+D:\HOC TAP\ky1_nam4\ki1_nam4\thuc_tap_nhom\de_tai\TTN_QL_GV_HS_THPT\Soucre\QL_GV_HS_THPT\QL_GV_HS_THPT_FORM\obj\Debug\QL_GV_HS_THPT_FORM.frmHocsinh.resources
+D:\HOC TAP\ky1_nam4\ki1_nam4\thuc_tap_nhom\de_tai\TTN_QL_GV_HS_THPT\Soucre\QL_GV_HS_THPT\QL_GV_HS_THPT_FORM\obj\Debug\QL_GV_HS_THPT_FORM.frmMain.resources
+D:\HOC TAP\ky1_nam4\ki1_nam4\thuc_tap_nhom\de_tai\TTN_QL_GV_HS_THPT\Soucre\QL_GV_HS_THPT\QL_GV_HS_THPT_FORM\obj\Debug\QL_GV_HS_THPT_FORM.frmQLGD.resources
+D:\HOC TAP\ky1_nam4\ki1_nam4\thuc_tap_nhom\de_tai\TTN_QL_GV_HS_THPT\Soucre\QL_GV_HS_THPT\QL_GV_HS_THPT_FORM\obj\Debug\QL_GV_HS_THPT_FORM.frmQuantri.resources
+D:\HOC TAP\ky1_nam4\ki1_nam4\thuc_tap_nhom\de_tai\TTN_QL_GV_HS_THPT\Soucre\QL_GV_HS_THPT\QL_GV_HS_THPT_FORM\obj\Debug\QL_GV_HS_THPT_FORM.frmThemGV.resources
+D:\HOC TAP\ky1_nam4\ki1_nam4\thuc_tap_nhom\de_tai\TTN_QL_GV_HS_THPT\Soucre\QL_GV_HS_THPT\QL_GV_HS_THPT_FORM\obj\Debug\QL_GV_HS_THPT_FORM.frmThemtaikhoan.resources
+D:\HOC TAP\ky1_nam4\ki1_nam4\thuc_tap_nhom\de_tai\TTN_QL_GV_HS_THPT\Soucre\QL_GV_HS_THPT\QL_GV_HS_THPT_FORM\obj\Debug\QL_GV_HS_THPT_FORM.frmTimGV.resources
+D:\HOC TAP\ky1_nam4\ki1_nam4\thuc_tap_nhom\de_tai\TTN_QL_GV_HS_THPT\Soucre\QL_GV_HS_THPT\QL_GV_HS_THPT_FORM\obj\Debug\QL_GV_HS_THPT_FORM.frmTKB.resources
+D:\HOC TAP\ky1_nam4\ki1_nam4\thuc_tap_nhom\de_tai\TTN_QL_GV_HS_THPT\Soucre\QL_GV_HS_THPT\QL_GV_HS_THPT_FORM\obj\Debug\QL_GV_HS_THPT_FORM.Properties.Resources.resources
+D:\HOC TAP\ky1_nam4\ki1_nam4\thuc_tap_nhom\de_tai\TTN_QL_GV_HS_THPT\Soucre\QL_GV_HS_THPT\QL_GV_HS_THPT_FORM\obj\Debug\QL_GV_HS_THPT_FORM.csproj.GenerateResource.Cache
+D:\HOC TAP\ky1_nam4\ki1_nam4\thuc_tap_nhom\de_tai\TTN_QL_GV_HS_THPT\Soucre\QL_GV_HS_THPT\QL_GV_HS_THPT_FORM\obj\Debug\QL_GV_HS_THPT_FORM.dll
+D:\HOC TAP\ky1_nam4\ki1_nam4\thuc_tap_nhom\de_tai\TTN_QL_GV_HS_THPT\Soucre\QL_GV_HS_THPT\QL_GV_HS_THPT_FORM\obj\Debug\QL_GV_HS_THPT_FORM.pdb

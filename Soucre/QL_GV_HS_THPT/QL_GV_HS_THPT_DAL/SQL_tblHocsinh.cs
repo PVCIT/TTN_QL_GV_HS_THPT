@@ -40,5 +40,13 @@ values (N'" + et.MaHS + "',N'" + et.Ho + "',N'" + et.Ten + "',N'" + et.GT + "',N
         {
             return cn.getDatatable(String.Format(@"SELECT distinct {0} FROM tblHocSinh",Field));
         }
+        public DataTable DoDLMaLop(string dk)
+        {
+            return cn.getDatatable("SELECT MaLop FROM tblLop " + dk);
+        }
+        public DataTable LayRaMaHS()//lấy ra top 1 mã thiết bị có tên mã thiết bị là gì đó
+        {
+            return cn.getDatatable("select top 1  MaHS from tblHocSinh order by MaHS desc ");
+        }
     }
 }
